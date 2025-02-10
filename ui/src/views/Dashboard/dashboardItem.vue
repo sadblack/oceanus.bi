@@ -580,7 +580,7 @@ export default {
   }
 }
 .visualize-card {
-  /deep/ .el-card__header {
+  ::v-deep .el-card__header {
     padding: 0;
     .operation-bar {
       font-size: 14px;
@@ -602,7 +602,7 @@ export default {
   text-align: center;
   height: 500px;
   color: #c0c4cc;
-  /deep/ .el-button {
+  ::v-deep .el-button {
     margin-top: 200px;
     margin-bottom: 25px;
   }

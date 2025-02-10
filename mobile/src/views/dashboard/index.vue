@@ -413,7 +413,7 @@ export default {
     }
   }
   .visualize-card {
-    /deep/ .el-card__header {
+    ::v-deep .el-card__header {
       padding: 0;
       .operation-bar {
         font-size: 12px;

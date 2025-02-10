@@ -195,7 +195,7 @@ export default {
           store.setAllColsAction(this.tableSchema);
         })
         .catch(() => {});
-        
+
     },
     handleMove(evt, originalEvent) {
       if (
@@ -220,10 +220,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .panel {
-  /deep/ .el-form-item__label {
+  ::v-deep .el-form-item__label {
     line-height: initial;
   }
-  /deep/ .el-form-item__content {
+  ::v-deep .el-form-item__content {
     line-height: initial;
   }
 }

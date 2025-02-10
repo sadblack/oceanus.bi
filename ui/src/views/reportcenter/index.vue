@@ -325,7 +325,7 @@ export default {
         }
       ).then(() => {
         const reportId = this.currentReport.id || this.currentReport.report_id
-        deleteReportByid(reportId).then(() => {   
+        deleteReportByid(reportId).then(() => {
           this.$message({
             type: "success",
             message: this.$t("common.deleteSuccess"),
@@ -348,7 +348,7 @@ export default {
     width: 250px;
     min-height: 100%;
     padding: 20px 10px;
-    /deep/ .el-card__header {
+    ::v-deep .el-card__header {
       div {
         display: flex;
         justify-content: space-between;

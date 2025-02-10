@@ -40,21 +40,21 @@ CREATE TABLE `bi_chart`  (
 -- ----------------------------
 -- Records of bi_chart
 -- ----------------------------
-INSERT INTO `bi_chart` VALUES ('03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '用户来源支付订单分析', '用户来源支付订单分析', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"payed_order\",\"calculFunc\":\"sum\",\"cname\":\"支付订单数\",\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"},{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"user_src\",\"cname\":\"用户来源\",\"name\":\"user_src\",\"lable\":\"用户来源\",\"id\":6464}],\"chartType\":\"bar\",\"filters\":[]}', 1, 1, '2020-08-28 10:13:37', '2020-08-29 15:03:33', 1, 12);
-INSERT INTO `bi_chart` VALUES ('0c02aaa8-7b63-437d-a293-7c665e7ebee8', '订单商品数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"good_order\",\"cname\":\"订单商品数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"good_order\",\"lable\":\"订单商品数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:53:31', '2020-09-03 14:52:31', 1, 12);
-INSERT INTO `bi_chart` VALUES ('13942e1e-c450-4a29-9f23-f642c78c0355', '支付订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"payed_order\",\"cname\":\"支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:52:20', '2020-09-03 14:51:20', 1, 12);
-INSERT INTO `bi_chart` VALUES ('45fc5e96-912b-496b-8c32-d69873c9d5e3', '取消订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"cancel_order\",\"cname\":\"取消订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"cancel_order\",\"lable\":\"取消订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:53:07', '2020-09-03 14:52:07', 1, 12);
-INSERT INTO `bi_chart` VALUES ('5496fa64-5d86-4530-9e58-c7f6e3a96178', '区域新订单数分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"new_order\",\"cname\":\"新订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"}],\"name\":\"new_order\",\"lable\":\"new_order(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_location\",\"cname\":\"区域\",\"name\":\"order_location\",\"lable\":\"order_location\",\"id\":6466}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-08-28 10:15:06', '2020-08-29 11:49:32', 1, 12);
-INSERT INTO `bi_chart` VALUES ('57f0ef26-1279-4be8-bf34-793c5d426eaf', '测试过滤条件', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"payed_order\",\"calculFunc\":\"sum\",\"cname\":\"支付订单数\",\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"lable\":\"时间\",\"id\":0}],\"chartType\":\"bar\",\"filters\":[{\"filteCol\":\"new_order\",\"colType\":\"int\",\"operatorParamNum\":1,\"filterOperator\":\"&lt;=\",\"value\":{\"value1\":\"200\",\"arrValue\":[]}},{\"filteCol\":\"pending_order\",\"colType\":\"int\",\"filterOperator\":\"&gt;\",\"value\":{\"value1\":\"1000\",\"arrValue\":[]},\"operatorParamNum\":1}]}', 1, 1, '2020-09-04 09:46:45', '2020-09-04 10:26:56', 1, 12);
-INSERT INTO `bi_chart` VALUES ('68eb3d09-29af-47fe-a0b0-eb59a66435f9', '订单区域复购分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"report_order\",\"calculFunc\":\"sum\",\"cname\":\"复购数\",\"name\":\"report_order\",\"lable\":\"复购数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_location\",\"cname\":\"区域\",\"name\":\"order_location\",\"lable\":\"区域\",\"id\":3}],\"chartType\":\"horizontalBar\",\"filters\":[]}', 1, 1, '2020-08-29 14:39:04', '2020-09-04 18:52:56', 1, 12);
-INSERT INTO `bi_chart` VALUES ('75c52d21-a469-4de8-acb9-904cf60f63ca', '测试分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[\"user_src desc\"],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"varchar\",\"availableFunc\":[{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"order_src\",\"calculFunc\":\"distinct\",\"cname\":\"订单来源\",\"name\":\"order_src\",\"lable\":\"订单来源(去重计数)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"isDimension\":true,\"Column\":\"user_src\",\"cname\":\"用户来源\",\"name\":\"user_src\",\"id\":1,\"lable\":\"用户来源\",\"asxAxis\":true}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-09-02 17:10:15', '2020-09-02 17:10:44', 1, 12);
-INSERT INTO `bi_chart` VALUES ('75e370ba-ce09-401c-9a06-b00d421abfca', '用户来源', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"new_order\",\"cname\":\"新订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"lable\":\"新订单数(合计)\",\"name\":\"new_order\"},{\"Column\":\"pending_order\",\"cname\":\"待支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"lable\":\"待支付订单数(合计)\",\"name\":\"pending_order\"}],\"selectedDimension\":[{\"Column\":\"user_src\",\"Type\":\"varchar\",\"cname\":\"用户来源\",\"id\":1,\"name\":\"user_src\",\"isDimension\":true,\"lable\":\"用户来源\",\"asxAxis\":true}],\"chartType\":\"bar\",\"filters\":[]}', 1, 1, '2020-09-08 09:09:14', '2020-09-08 09:09:15', 1, 12);
-INSERT INTO `bi_chart` VALUES ('a4faad40-585c-4a40-aad8-dfbb9b171246', '测试112', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"id\":0}],\"chartType\":\"table\",\"filters\":[]}', 1, 1, '2020-08-29 11:47:09', '2020-08-29 11:47:45', 1, 12);
-INSERT INTO `bi_chart` VALUES ('d57b2854-a86a-4537-81b6-175114c7258c', '取消及拒付订单统计', '这是一个测试面板', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[\"reject_order desc\"],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"reject_order\",\"calculFunc\":\"sum\",\"cname\":\"拒绝订单数\",\"name\":\"reject_order\",\"lable\":\"拒绝订单数(合计)\"},{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"cancel_order\",\"calculFunc\":\"sum\",\"cname\":\"取消订单数\",\"name\":\"cancel_order\",\"lable\":\"取消订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"lable\":\"时间\",\"id\":6463}],\"chartType\":\"bar\",\"filters\":[{\"filteCol\":\"date\",\"colType\":\"varchar\",\"operatorParamNum\":2,\"filterOperator\":\"BETWEEN\",\"value\":{\"value2\":\"2015-10-20\",\"value1\":\"2015-10-12\",\"arrValue\":[]}}]}', 1, 1, '2020-08-28 10:08:33', '2020-09-04 19:00:50', 1, 12);
-INSERT INTO `bi_chart` VALUES ('e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '待支付订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"pending_order\",\"cname\":\"待支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"pending_order\",\"lable\":\"待支付订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:52:45', '2020-09-03 14:51:45', 1, 12);
-INSERT INTO `bi_chart` VALUES ('f2b74c75-dd85-4007-ab5f-6ae1e90845b5', '订单来源分析', '订单来源分析', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_src\",\"cname\":\"订单来源\",\"name\":\"order_src\",\"lable\":\"订单来源\",\"id\":6465}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-08-28 10:23:37', '2020-09-08 08:15:15', 1, 12);
-INSERT INTO `bi_chart` VALUES ('f6086692-ff12-46e5-abcb-58519a4dbf88', '新订单合计数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:19:49', '2020-09-03 14:46:00', 1, 12);
-INSERT INTO `bi_chart` VALUES ('f6161606-4e63-4de7-85b8-b89789fcfce1', '字段去重统计演示', '字段去重统计演示', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"order_src\",\"cname\":\"订单来源\",\"calculFunc\":\"distinct\",\"Type\":\"varchar\",\"availableFunc\":[{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"order_src\",\"lable\":\"订单来源(去重计数)\"}],\"selectedDimension\":[{\"Column\":\"order_location\",\"Type\":\"varchar\",\"cname\":\"区域\",\"id\":3,\"lable\":\"区域\",\"name\":\"order_location\",\"asxAxis\":true,\"isDimension\":true}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-09-01 14:04:25', '2020-09-01 14:03:30', 1, 12);
+INSERT INTO `bi_chart` VALUES ('03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '用户来源支付订单分析', '用户来源支付订单分析', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"payed_order\",\"calculFunc\":\"sum\",\"cname\":\"支付订单数\",\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"},{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"user_src\",\"cname\":\"用户来源\",\"name\":\"user_src\",\"lable\":\"用户来源\",\"id\":6464}],\"chartType\":\"bar\",\"filters\":[]}', 1, 1, '2020-08-28 10:13:37', '2020-08-29 15:03:33', 1, 12),
+('0c02aaa8-7b63-437d-a293-7c665e7ebee8', '订单商品数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"good_order\",\"cname\":\"订单商品数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"good_order\",\"lable\":\"订单商品数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:53:31', '2020-09-03 14:52:31', 1, 12),
+('13942e1e-c450-4a29-9f23-f642c78c0355', '支付订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"payed_order\",\"cname\":\"支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:52:20', '2020-09-03 14:51:20', 1, 12),
+('45fc5e96-912b-496b-8c32-d69873c9d5e3', '取消订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"cancel_order\",\"cname\":\"取消订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"cancel_order\",\"lable\":\"取消订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:53:07', '2020-09-03 14:52:07', 1, 12),
+('5496fa64-5d86-4530-9e58-c7f6e3a96178', '区域新订单数分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"new_order\",\"cname\":\"新订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"}],\"name\":\"new_order\",\"lable\":\"new_order(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_location\",\"cname\":\"区域\",\"name\":\"order_location\",\"lable\":\"order_location\",\"id\":6466}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-08-28 10:15:06', '2020-08-29 11:49:32', 1, 12),
+('57f0ef26-1279-4be8-bf34-793c5d426eaf', '测试过滤条件', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"payed_order\",\"calculFunc\":\"sum\",\"cname\":\"支付订单数\",\"name\":\"payed_order\",\"lable\":\"支付订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"lable\":\"时间\",\"id\":0}],\"chartType\":\"bar\",\"filters\":[{\"filteCol\":\"new_order\",\"colType\":\"int\",\"operatorParamNum\":1,\"filterOperator\":\"&lt;=\",\"value\":{\"value1\":\"200\",\"arrValue\":[]}},{\"filteCol\":\"pending_order\",\"colType\":\"int\",\"filterOperator\":\"&gt;\",\"value\":{\"value1\":\"1000\",\"arrValue\":[]},\"operatorParamNum\":1}]}', 1, 1, '2020-09-04 09:46:45', '2020-09-04 10:26:56', 1, 12),
+('68eb3d09-29af-47fe-a0b0-eb59a66435f9', '订单区域复购分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"report_order\",\"calculFunc\":\"sum\",\"cname\":\"复购数\",\"name\":\"report_order\",\"lable\":\"复购数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_location\",\"cname\":\"区域\",\"name\":\"order_location\",\"lable\":\"区域\",\"id\":3}],\"chartType\":\"horizontalBar\",\"filters\":[]}', 1, 1, '2020-08-29 14:39:04', '2020-09-04 18:52:56', 1, 12),
+('75c52d21-a469-4de8-acb9-904cf60f63ca', '测试分析', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[\"user_src desc\"],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"varchar\",\"availableFunc\":[{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"order_src\",\"calculFunc\":\"distinct\",\"cname\":\"订单来源\",\"name\":\"order_src\",\"lable\":\"订单来源(去重计数)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"isDimension\":true,\"Column\":\"user_src\",\"cname\":\"用户来源\",\"name\":\"user_src\",\"id\":1,\"lable\":\"用户来源\",\"asxAxis\":true}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-09-02 17:10:15', '2020-09-02 17:10:44', 1, 12),
+('75e370ba-ce09-401c-9a06-b00d421abfca', '用户来源', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"new_order\",\"cname\":\"新订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"lable\":\"新订单数(合计)\",\"name\":\"new_order\"},{\"Column\":\"pending_order\",\"cname\":\"待支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"lable\":\"待支付订单数(合计)\",\"name\":\"pending_order\"}],\"selectedDimension\":[{\"Column\":\"user_src\",\"Type\":\"varchar\",\"cname\":\"用户来源\",\"id\":1,\"name\":\"user_src\",\"isDimension\":true,\"lable\":\"用户来源\",\"asxAxis\":true}],\"chartType\":\"bar\",\"filters\":[]}', 1, 1, '2020-09-08 09:09:14', '2020-09-08 09:09:15', 1, 12),
+('a4faad40-585c-4a40-aad8-dfbb9b171246', '测试112', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"id\":0}],\"chartType\":\"table\",\"filters\":[]}', 1, 1, '2020-08-29 11:47:09', '2020-08-29 11:47:45', 1, 12),
+('d57b2854-a86a-4537-81b6-175114c7258c', '取消及拒付订单统计', '这是一个测试面板', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[\"reject_order desc\"],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"reject_order\",\"calculFunc\":\"sum\",\"cname\":\"拒绝订单数\",\"name\":\"reject_order\",\"lable\":\"拒绝订单数(合计)\"},{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"cancel_order\",\"calculFunc\":\"sum\",\"cname\":\"取消订单数\",\"name\":\"cancel_order\",\"lable\":\"取消订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"date\",\"cname\":\"时间\",\"name\":\"date\",\"lable\":\"时间\",\"id\":6463}],\"chartType\":\"bar\",\"filters\":[{\"filteCol\":\"date\",\"colType\":\"varchar\",\"operatorParamNum\":2,\"filterOperator\":\"BETWEEN\",\"value\":{\"value2\":\"2015-10-20\",\"value1\":\"2015-10-12\",\"arrValue\":[]}}]}', 1, 1, '2020-08-28 10:08:33', '2020-09-04 19:00:50', 1, 12),
+('e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '待支付订单数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"pending_order\",\"cname\":\"待支付订单数\",\"calculFunc\":\"sum\",\"Type\":\"int\",\"availableFunc\":[{\"name\":\"合计\",\"func\":\"sum\"},{\"name\":\"平均\",\"func\":\"avg\"},{\"name\":\"最大值\",\"func\":\"max\"},{\"name\":\"最小值\",\"func\":\"min\"},{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"pending_order\",\"lable\":\"待支付订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:52:45', '2020-09-03 14:51:45', 1, 12),
+('f2b74c75-dd85-4007-ab5f-6ae1e90845b5', '订单来源分析', '订单来源分析', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[{\"Type\":\"varchar\",\"asxAxis\":true,\"isDimension\":true,\"Column\":\"order_src\",\"cname\":\"订单来源\",\"name\":\"order_src\",\"lable\":\"订单来源\",\"id\":6465}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-08-28 10:23:37', '2020-09-08 08:15:15', 1, 12),
+('f6086692-ff12-46e5-abcb-58519a4dbf88', '新订单合计数', '', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Type\":\"int\",\"availableFunc\":[{\"func\":\"sum\",\"name\":\"合计\"},{\"func\":\"avg\",\"name\":\"平均\"},{\"func\":\"max\",\"name\":\"最大值\"},{\"func\":\"min\",\"name\":\"最小值\"},{\"func\":\"count\",\"name\":\"计数\"},{\"func\":\"none\",\"name\":\"-\"},{\"func\":\"distinct\",\"name\":\"去重计数\"}],\"Column\":\"new_order\",\"calculFunc\":\"sum\",\"cname\":\"新订单数\",\"name\":\"new_order\",\"lable\":\"新订单数(合计)\"}],\"selectedDimension\":[],\"chartType\":\"number\",\"filters\":[]}', 1, 1, '2020-09-03 14:19:49', '2020-09-03 14:46:00', 1, 12),
+('f6161606-4e63-4de7-85b8-b89789fcfce1', '字段去重统计演示', '字段去重统计演示', '{\"dataSrc\":\"order_analysis\",\"source_id\":12,\"orderByStrs\":[],\"limit\":200,\"selectedCalcul\":[{\"Column\":\"order_src\",\"cname\":\"订单来源\",\"calculFunc\":\"distinct\",\"Type\":\"varchar\",\"availableFunc\":[{\"name\":\"计数\",\"func\":\"count\"},{\"name\":\"-\",\"func\":\"none\"},{\"name\":\"去重计数\",\"func\":\"distinct\"}],\"name\":\"order_src\",\"lable\":\"订单来源(去重计数)\"}],\"selectedDimension\":[{\"Column\":\"order_location\",\"Type\":\"varchar\",\"cname\":\"区域\",\"id\":3,\"lable\":\"区域\",\"name\":\"order_location\",\"asxAxis\":true,\"isDimension\":true}],\"chartType\":\"pie\",\"filters\":[]}', 1, 1, '2020-09-01 14:04:25', '2020-09-01 14:03:30', 1, 12);
 
 -- ----------------------------
 -- Table structure for bi_chartboardmap
@@ -74,67 +74,67 @@ CREATE TABLE `bi_chartboardmap`  (
 -- ----------------------------
 -- Records of bi_chartboardmap
 -- ----------------------------
-INSERT INTO `bi_chartboardmap` VALUES (9, '2020-08-28 15:14:15', '2020-08-28 15:14:15', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (10, '2020-08-28 15:14:22', '2020-08-28 15:14:22', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (11, '2020-08-28 15:14:50', '2020-08-28 15:14:50', 'd57b2854-a86a-4537-81b6-175114c7258c', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (12, '2020-08-28 19:14:37', '2020-08-28 19:14:37', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (13, '2020-08-29 12:27:23', '2020-08-29 12:27:23', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'db707ab4-0102-4123-a366-4420a6aafe43');
-INSERT INTO `bi_chartboardmap` VALUES (14, '2020-08-29 12:27:29', '2020-08-29 12:27:29', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'db707ab4-0102-4123-a366-4420a6aafe43');
-INSERT INTO `bi_chartboardmap` VALUES (15, '2020-08-29 12:27:36', '2020-08-29 12:27:36', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'db707ab4-0102-4123-a366-4420a6aafe43');
-INSERT INTO `bi_chartboardmap` VALUES (16, '2020-08-29 12:27:43', '2020-08-29 12:27:43', 'd57b2854-a86a-4537-81b6-175114c7258c', 'db707ab4-0102-4123-a366-4420a6aafe43');
-INSERT INTO `bi_chartboardmap` VALUES (18, '2020-09-01 14:04:46', '2020-09-01 14:04:46', 'f6161606-4e63-4de7-85b8-b89789fcfce1', 'db707ab4-0102-4123-a366-4420a6aafe43');
-INSERT INTO `bi_chartboardmap` VALUES (19, '2020-09-02 16:42:22', '2020-09-02 16:42:22', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93');
-INSERT INTO `bi_chartboardmap` VALUES (20, '2020-09-02 16:42:30', '2020-09-02 16:42:30', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93');
-INSERT INTO `bi_chartboardmap` VALUES (21, '2020-09-02 16:42:34', '2020-09-02 16:42:34', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93');
-INSERT INTO `bi_chartboardmap` VALUES (22, '2020-09-02 17:08:35', '2020-09-02 17:08:35', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (23, '2020-09-02 17:08:39', '2020-09-02 17:08:39', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (24, '2020-09-02 17:08:44', '2020-09-02 17:08:44', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (25, '2020-09-02 17:08:47', '2020-09-02 17:08:47', 'f6161606-4e63-4de7-85b8-b89789fcfce1', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (26, '2020-09-02 17:08:50', '2020-09-02 17:08:50', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (27, '2020-09-02 17:09:07', '2020-09-02 17:09:07', 'd57b2854-a86a-4537-81b6-175114c7258c', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b');
-INSERT INTO `bi_chartboardmap` VALUES (28, '2020-09-02 17:10:35', '2020-09-02 17:10:35', '75c52d21-a469-4de8-acb9-904cf60f63ca', '4a5935a2-2ee7-418d-8f4d-3264ed0a679b');
-INSERT INTO `bi_chartboardmap` VALUES (29, '2020-09-03 12:12:03', '2020-09-03 12:12:03', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '29561412-13c3-4984-ab09-299341d11ceb');
-INSERT INTO `bi_chartboardmap` VALUES (30, '2020-09-03 12:12:04', '2020-09-03 12:12:04', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '29561412-13c3-4984-ab09-299341d11ceb');
-INSERT INTO `bi_chartboardmap` VALUES (31, '2020-09-03 12:12:09', '2020-09-03 12:12:09', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '29561412-13c3-4984-ab09-299341d11ceb');
-INSERT INTO `bi_chartboardmap` VALUES (32, '2020-09-03 12:12:14', '2020-09-03 12:12:14', 'a4faad40-585c-4a40-aad8-dfbb9b171246', '29561412-13c3-4984-ab09-299341d11ceb');
-INSERT INTO `bi_chartboardmap` VALUES (33, '2020-09-03 12:37:30', '2020-09-03 12:37:30', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (34, '2020-09-03 12:37:35', '2020-09-03 12:37:35', 'a4faad40-585c-4a40-aad8-dfbb9b171246', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (35, '2020-09-03 14:20:10', '2020-09-03 14:20:10', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (36, '2020-09-03 14:53:48', '2020-09-03 14:53:48', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (37, '2020-09-03 14:53:54', '2020-09-03 14:53:54', '13942e1e-c450-4a29-9f23-f642c78c0355', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (38, '2020-09-03 14:54:04', '2020-09-03 14:54:04', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (39, '2020-09-03 14:54:14', '2020-09-03 14:54:14', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e');
-INSERT INTO `bi_chartboardmap` VALUES (40, '2020-09-04 10:27:50', '2020-09-04 10:27:50', '57f0ef26-1279-4be8-bf34-793c5d426eaf', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93');
-INSERT INTO `bi_chartboardmap` VALUES (42, '2020-09-04 13:59:25', '2020-09-04 13:59:25', '45fc5e96-912b-496b-8c32-d69873c9d5e3', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (43, '2020-09-04 13:59:42', '2020-09-04 13:59:42', '13942e1e-c450-4a29-9f23-f642c78c0355', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (44, '2020-09-04 14:00:03', '2020-09-04 14:00:03', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (45, '2020-09-04 14:02:20', '2020-09-04 14:02:20', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (46, '2020-09-04 14:02:36', '2020-09-04 14:02:36', 'f6086692-ff12-46e5-abcb-58519a4dbf88', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (47, '2020-09-04 18:52:13', '2020-09-04 18:52:13', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'ac1c083e-d554-4c28-83e3-6f890f37e018');
-INSERT INTO `bi_chartboardmap` VALUES (48, '2020-09-05 11:20:02', '2020-09-05 11:20:02', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (49, '2020-09-05 11:20:06', '2020-09-05 11:20:06', '13942e1e-c450-4a29-9f23-f642c78c0355', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (50, '2020-09-05 11:20:09', '2020-09-05 11:20:09', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (51, '2020-09-05 11:20:15', '2020-09-05 11:20:15', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (52, '2020-09-05 11:20:59', '2020-09-05 11:20:59', '5496fa64-5d86-4530-9e58-c7f6e3a96178', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (53, '2020-09-05 11:21:26', '2020-09-05 11:21:26', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (54, '2020-09-05 11:21:30', '2020-09-05 11:21:30', 'd57b2854-a86a-4537-81b6-175114c7258c', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (55, '2020-09-05 11:21:33', '2020-09-05 11:21:33', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (56, '2020-09-05 11:21:39', '2020-09-05 11:21:39', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (57, '2020-09-05 11:21:42', '2020-09-05 11:21:42', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (58, '2020-09-05 11:23:12', '2020-09-05 11:23:12', 'f6161606-4e63-4de7-85b8-b89789fcfce1', '70caa17e-2e5a-4096-8c61-e4336b6b98a6');
-INSERT INTO `bi_chartboardmap` VALUES (59, '2020-09-05 11:25:43', '2020-09-05 11:25:43', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (60, '2020-09-05 11:25:47', '2020-09-05 11:25:47', '13942e1e-c450-4a29-9f23-f642c78c0355', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (61, '2020-09-05 11:25:52', '2020-09-05 11:25:52', '5496fa64-5d86-4530-9e58-c7f6e3a96178', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (62, '2020-09-05 11:26:07', '2020-09-05 11:26:07', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (63, '2020-09-05 11:26:21', '2020-09-05 11:26:21', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (64, '2020-09-05 11:26:35', '2020-09-05 11:26:35', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (65, '2020-09-05 11:27:09', '2020-09-05 11:27:09', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (66, '2020-09-05 11:27:40', '2020-09-05 11:27:40', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '10ea9f87-0634-45dd-8081-973b3ec7191b');
-INSERT INTO `bi_chartboardmap` VALUES (67, '2020-09-08 09:09:43', '2020-09-08 09:09:43', '75e370ba-ce09-401c-9a06-b00d421abfca', '29561412-13c3-4984-ab09-299341d11ceb');
-INSERT INTO `bi_chartboardmap` VALUES (68, '2021-05-13 17:13:06', '2021-05-13 17:13:06', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51');
-INSERT INTO `bi_chartboardmap` VALUES (69, '2021-05-13 17:13:11', '2021-05-13 17:13:11', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51');
-INSERT INTO `bi_chartboardmap` VALUES (70, '2021-05-13 17:13:14', '2021-05-13 17:13:14', '57f0ef26-1279-4be8-bf34-793c5d426eaf', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51');
-INSERT INTO `bi_chartboardmap` VALUES (71, '2021-05-13 17:13:17', '2021-05-13 17:13:17', '45fc5e96-912b-496b-8c32-d69873c9d5e3', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51');
+INSERT INTO `bi_chartboardmap` VALUES (9, '2020-08-28 15:14:15', '2020-08-28 15:14:15', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(10, '2020-08-28 15:14:22', '2020-08-28 15:14:22', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(11, '2020-08-28 15:14:50', '2020-08-28 15:14:50', 'd57b2854-a86a-4537-81b6-175114c7258c', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(12, '2020-08-28 19:14:37', '2020-08-28 19:14:37', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(13, '2020-08-29 12:27:23', '2020-08-29 12:27:23', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'db707ab4-0102-4123-a366-4420a6aafe43'),
+(14, '2020-08-29 12:27:29', '2020-08-29 12:27:29', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'db707ab4-0102-4123-a366-4420a6aafe43'),
+(15, '2020-08-29 12:27:36', '2020-08-29 12:27:36', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'db707ab4-0102-4123-a366-4420a6aafe43'),
+(16, '2020-08-29 12:27:43', '2020-08-29 12:27:43', 'd57b2854-a86a-4537-81b6-175114c7258c', 'db707ab4-0102-4123-a366-4420a6aafe43'),
+(18, '2020-09-01 14:04:46', '2020-09-01 14:04:46', 'f6161606-4e63-4de7-85b8-b89789fcfce1', 'db707ab4-0102-4123-a366-4420a6aafe43'),
+(19, '2020-09-02 16:42:22', '2020-09-02 16:42:22', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93'),
+(20, '2020-09-02 16:42:30', '2020-09-02 16:42:30', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93'),
+(21, '2020-09-02 16:42:34', '2020-09-02 16:42:34', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93'),
+(22, '2020-09-02 17:08:35', '2020-09-02 17:08:35', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(23, '2020-09-02 17:08:39', '2020-09-02 17:08:39', '5496fa64-5d86-4530-9e58-c7f6e3a96178', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(24, '2020-09-02 17:08:44', '2020-09-02 17:08:44', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(25, '2020-09-02 17:08:47', '2020-09-02 17:08:47', 'f6161606-4e63-4de7-85b8-b89789fcfce1', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(26, '2020-09-02 17:08:50', '2020-09-02 17:08:50', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(27, '2020-09-02 17:09:07', '2020-09-02 17:09:07', 'd57b2854-a86a-4537-81b6-175114c7258c', 'cec92ab4-d5de-42b7-80d0-f9ab2ce5aa9b'),
+(28, '2020-09-02 17:10:35', '2020-09-02 17:10:35', '75c52d21-a469-4de8-acb9-904cf60f63ca', '4a5935a2-2ee7-418d-8f4d-3264ed0a679b'),
+(29, '2020-09-03 12:12:03', '2020-09-03 12:12:03', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '29561412-13c3-4984-ab09-299341d11ceb'),
+(30, '2020-09-03 12:12:04', '2020-09-03 12:12:04', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '29561412-13c3-4984-ab09-299341d11ceb'),
+(31, '2020-09-03 12:12:09', '2020-09-03 12:12:09', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '29561412-13c3-4984-ab09-299341d11ceb'),
+(32, '2020-09-03 12:12:14', '2020-09-03 12:12:14', 'a4faad40-585c-4a40-aad8-dfbb9b171246', '29561412-13c3-4984-ab09-299341d11ceb'),
+(33, '2020-09-03 12:37:30', '2020-09-03 12:37:30', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(34, '2020-09-03 12:37:35', '2020-09-03 12:37:35', 'a4faad40-585c-4a40-aad8-dfbb9b171246', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(35, '2020-09-03 14:20:10', '2020-09-03 14:20:10', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(36, '2020-09-03 14:53:48', '2020-09-03 14:53:48', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(37, '2020-09-03 14:53:54', '2020-09-03 14:53:54', '13942e1e-c450-4a29-9f23-f642c78c0355', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(38, '2020-09-03 14:54:04', '2020-09-03 14:54:04', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(39, '2020-09-03 14:54:14', '2020-09-03 14:54:14', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '4de8022a-0d4a-4f0e-ba16-d546c305fd7e'),
+(40, '2020-09-04 10:27:50', '2020-09-04 10:27:50', '57f0ef26-1279-4be8-bf34-793c5d426eaf', 'b44002b0-ed7d-49e0-9ec7-ade3a24a3e93'),
+(42, '2020-09-04 13:59:25', '2020-09-04 13:59:25', '45fc5e96-912b-496b-8c32-d69873c9d5e3', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(43, '2020-09-04 13:59:42', '2020-09-04 13:59:42', '13942e1e-c450-4a29-9f23-f642c78c0355', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(44, '2020-09-04 14:00:03', '2020-09-04 14:00:03', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(45, '2020-09-04 14:02:20', '2020-09-04 14:02:20', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(46, '2020-09-04 14:02:36', '2020-09-04 14:02:36', 'f6086692-ff12-46e5-abcb-58519a4dbf88', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(47, '2020-09-04 18:52:13', '2020-09-04 18:52:13', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', 'ac1c083e-d554-4c28-83e3-6f890f37e018'),
+(48, '2020-09-05 11:20:02', '2020-09-05 11:20:02', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(49, '2020-09-05 11:20:06', '2020-09-05 11:20:06', '13942e1e-c450-4a29-9f23-f642c78c0355', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(50, '2020-09-05 11:20:09', '2020-09-05 11:20:09', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(51, '2020-09-05 11:20:15', '2020-09-05 11:20:15', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(52, '2020-09-05 11:20:59', '2020-09-05 11:20:59', '5496fa64-5d86-4530-9e58-c7f6e3a96178', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(53, '2020-09-05 11:21:26', '2020-09-05 11:21:26', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(54, '2020-09-05 11:21:30', '2020-09-05 11:21:30', 'd57b2854-a86a-4537-81b6-175114c7258c', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(55, '2020-09-05 11:21:33', '2020-09-05 11:21:33', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(56, '2020-09-05 11:21:39', '2020-09-05 11:21:39', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(57, '2020-09-05 11:21:42', '2020-09-05 11:21:42', 'f2b74c75-dd85-4007-ab5f-6ae1e90845b5', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(58, '2020-09-05 11:23:12', '2020-09-05 11:23:12', 'f6161606-4e63-4de7-85b8-b89789fcfce1', '70caa17e-2e5a-4096-8c61-e4336b6b98a6'),
+(59, '2020-09-05 11:25:43', '2020-09-05 11:25:43', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(60, '2020-09-05 11:25:47', '2020-09-05 11:25:47', '13942e1e-c450-4a29-9f23-f642c78c0355', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(61, '2020-09-05 11:25:52', '2020-09-05 11:25:52', '5496fa64-5d86-4530-9e58-c7f6e3a96178', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(62, '2020-09-05 11:26:07', '2020-09-05 11:26:07', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(63, '2020-09-05 11:26:21', '2020-09-05 11:26:21', '45fc5e96-912b-496b-8c32-d69873c9d5e3', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(64, '2020-09-05 11:26:35', '2020-09-05 11:26:35', 'e83a1ab1-fc6b-464f-8b60-9f101d0fdfa1', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(65, '2020-09-05 11:27:09', '2020-09-05 11:27:09', 'f6086692-ff12-46e5-abcb-58519a4dbf88', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(66, '2020-09-05 11:27:40', '2020-09-05 11:27:40', '68eb3d09-29af-47fe-a0b0-eb59a66435f9', '10ea9f87-0634-45dd-8081-973b3ec7191b'),
+(67, '2020-09-08 09:09:43', '2020-09-08 09:09:43', '75e370ba-ce09-401c-9a06-b00d421abfca', '29561412-13c3-4984-ab09-299341d11ceb'),
+(68, '2021-05-13 17:13:06', '2021-05-13 17:13:06', '03cce4e1-75b1-4fa6-8d47-943b3ae09c7b', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51'),
+(69, '2021-05-13 17:13:11', '2021-05-13 17:13:11', '0c02aaa8-7b63-437d-a293-7c665e7ebee8', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51'),
+(70, '2021-05-13 17:13:14', '2021-05-13 17:13:14', '57f0ef26-1279-4be8-bf34-793c5d426eaf', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51'),
+(71, '2021-05-13 17:13:17', '2021-05-13 17:13:17', '45fc5e96-912b-496b-8c32-d69873c9d5e3', 'ed7a6e5f-a159-4b9f-bcf1-1eb1094fce51');
 
 -- ----------------------------
 -- Table structure for bi_dashboard
@@ -248,45 +248,45 @@ CREATE TABLE `bi_datasource_tablefield`  (
 -- ----------------------------
 -- Records of bi_datasource_tablefield
 -- ----------------------------
-INSERT INTO `bi_datasource_tablefield` VALUES (6463, 268, 'date', '时间', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 19);
-INSERT INTO `bi_datasource_tablefield` VALUES (6464, 268, 'user_src', '用户来源', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 9);
-INSERT INTO `bi_datasource_tablefield` VALUES (6465, 268, 'order_src', '订单来源', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 11);
-INSERT INTO `bi_datasource_tablefield` VALUES (6466, 268, 'order_location', '区域', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 2);
-INSERT INTO `bi_datasource_tablefield` VALUES (6467, 268, 'new_order', '新订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6468, 268, 'payed_order', '支付订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6469, 268, 'pending_order', '待支付订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6470, 268, 'cancel_order', '取消订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6471, 268, 'reject_order', '拒绝订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6472, 268, 'good_order', '订单商品数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6473, 268, 'report_order', '复购数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6485, 269, 'date', 'date', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 19);
-INSERT INTO `bi_datasource_tablefield` VALUES (6486, 269, 'user_src', 'user_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 9);
-INSERT INTO `bi_datasource_tablefield` VALUES (6487, 269, 'order_src', 'order_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 11);
-INSERT INTO `bi_datasource_tablefield` VALUES (6488, 269, 'order_location', 'order_location', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 2);
-INSERT INTO `bi_datasource_tablefield` VALUES (6489, 269, 'new_order', 'new_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6490, 269, 'payed_order', 'payed_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6491, 269, 'pending_order', 'pending_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6492, 269, 'cancel_order', 'cancel_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6493, 269, 'reject_order', 'reject_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6494, 269, 'good_order', 'good_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6495, 269, 'report_order', 'report_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6496, 269, 'date', 'date', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 19);
-INSERT INTO `bi_datasource_tablefield` VALUES (6497, 269, 'user_src', 'user_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 9);
-INSERT INTO `bi_datasource_tablefield` VALUES (6498, 269, 'order_src', 'order_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 11);
-INSERT INTO `bi_datasource_tablefield` VALUES (6499, 269, 'order_location', 'order_location', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 2);
-INSERT INTO `bi_datasource_tablefield` VALUES (6500, 269, 'new_order', 'new_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6501, 269, 'payed_order', 'payed_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6502, 269, 'pending_order', 'pending_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6503, 269, 'cancel_order', 'cancel_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6504, 269, 'reject_order', 'reject_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6505, 269, 'good_order', 'good_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (6506, 269, 'report_order', 'report_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10);
-INSERT INTO `bi_datasource_tablefield` VALUES (7518, 314, 'demo_id', '编号', 'int', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 0);
-INSERT INTO `bi_datasource_tablefield` VALUES (7519, 314, 'demo_name', '名称', 'varchar', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 30);
-INSERT INTO `bi_datasource_tablefield` VALUES (7520, 314, 'demo_password', '密码', 'varchar', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 20);
-INSERT INTO `bi_datasource_tablefield` VALUES (7521, 315, 'demo_id', '编号', 'int', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 0);
-INSERT INTO `bi_datasource_tablefield` VALUES (7522, 315, 'demo_name', '名称', 'varchar', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 30);
-INSERT INTO `bi_datasource_tablefield` VALUES (7523, 315, 'demo_password', '密码', 'varchar', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 20);
+INSERT INTO `bi_datasource_tablefield` VALUES (6463, 268, 'date', '时间', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 19),
+(6464, 268, 'user_src', '用户来源', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 9),
+(6465, 268, 'order_src', '订单来源', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 11),
+(6466, 268, 'order_location', '区域', 'varchar', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 2),
+(6467, 268, 'new_order', '新订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6468, 268, 'payed_order', '支付订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6469, 268, 'pending_order', '待支付订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6470, 268, 'cancel_order', '取消订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6471, 268, 'reject_order', '拒绝订单数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6472, 268, 'good_order', '订单商品数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6473, 268, 'report_order', '复购数', 'int', 1, '2020-08-27 17:47:30', 1, 'admin', 1, 10),
+(6485, 269, 'date', 'date', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 19),
+(6486, 269, 'user_src', 'user_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 9),
+(6487, 269, 'order_src', 'order_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 11),
+(6488, 269, 'order_location', 'order_location', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 2),
+(6489, 269, 'new_order', 'new_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6490, 269, 'payed_order', 'payed_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6491, 269, 'pending_order', 'pending_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6492, 269, 'cancel_order', 'cancel_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6493, 269, 'reject_order', 'reject_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6494, 269, 'good_order', 'good_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6495, 269, 'report_order', 'report_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6496, 269, 'date', 'date', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 19),
+(6497, 269, 'user_src', 'user_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 9),
+(6498, 269, 'order_src', 'order_src', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 11),
+(6499, 269, 'order_location', 'order_location', 'VARCHAR', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 2),
+(6500, 269, 'new_order', 'new_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6501, 269, 'payed_order', 'payed_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6502, 269, 'pending_order', 'pending_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6503, 269, 'cancel_order', 'cancel_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6504, 269, 'reject_order', 'reject_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6505, 269, 'good_order', 'good_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(6506, 269, 'report_order', 'report_order', 'INT', 1, '2020-08-29 10:30:35', 1, 'admin', 1, 10),
+(7518, 314, 'demo_id', '编号', 'int', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 0),
+(7519, 314, 'demo_name', '名称', 'varchar', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 30),
+(7520, 314, 'demo_password', '密码', 'varchar', 1, '2020-08-31 15:35:05', 1, 'admin', 1, 20),
+(7521, 315, 'demo_id', '编号', 'int', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 0),
+(7522, 315, 'demo_name', '名称', 'varchar', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 30),
+(7523, 315, 'demo_password', '密码', 'varchar', 1, '2020-08-31 15:35:30', 1, 'admin', 1, 20);
 
 -- ----------------------------
 -- Table structure for bi_project
@@ -775,62 +775,62 @@ CREATE TABLE `sys_dict_data`  (
 -- ----------------------------
 -- Records of sys_dict_data
 -- ----------------------------
-INSERT INTO `sys_dict_data` VALUES (1, 1, '男', '0', 'sys_user_sex', '', '', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别男');
-INSERT INTO `sys_dict_data` VALUES (2, 2, '女', '1', 'sys_user_sex', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别女');
-INSERT INTO `sys_dict_data` VALUES (3, 3, '未知', '2', 'sys_user_sex', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别未知');
-INSERT INTO `sys_dict_data` VALUES (4, 1, '显示', '0', 'sys_show_hide', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '显示菜单');
-INSERT INTO `sys_dict_data` VALUES (5, 2, '隐藏', '1', 'sys_show_hide', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '隐藏菜单');
-INSERT INTO `sys_dict_data` VALUES (6, 1, '正常', '0', 'sys_normal_disable', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
-INSERT INTO `sys_dict_data` VALUES (7, 2, '停用', '1', 'sys_normal_disable', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态');
-INSERT INTO `sys_dict_data` VALUES (8, 1, '正常', '0', 'sys_job_status', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
-INSERT INTO `sys_dict_data` VALUES (9, 2, '暂停', '1', 'sys_job_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态');
-INSERT INTO `sys_dict_data` VALUES (10, 1, '默认', 'DEFAULT', 'sys_job_group', '', '', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '默认分组');
-INSERT INTO `sys_dict_data` VALUES (11, 2, '系统', 'SYSTEM', 'sys_job_group', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统分组');
-INSERT INTO `sys_dict_data` VALUES (12, 1, '是', 'Y', 'sys_yes_no', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统默认是');
-INSERT INTO `sys_dict_data` VALUES (13, 2, '否', 'N', 'sys_yes_no', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统默认否');
-INSERT INTO `sys_dict_data` VALUES (14, 1, '通知', '1', 'sys_notice_type', '', 'warning', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '通知');
-INSERT INTO `sys_dict_data` VALUES (15, 2, '公告', '2', 'sys_notice_type', '', 'success', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '公告');
-INSERT INTO `sys_dict_data` VALUES (16, 1, '正常', '0', 'sys_notice_status', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
-INSERT INTO `sys_dict_data` VALUES (17, 2, '关闭', '1', 'sys_notice_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '关闭状态');
-INSERT INTO `sys_dict_data` VALUES (18, 1, '新增', '1', 'sys_oper_type', '', 'info', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '新增操作');
-INSERT INTO `sys_dict_data` VALUES (19, 2, '修改', '2', 'sys_oper_type', '', 'info', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '修改操作');
-INSERT INTO `sys_dict_data` VALUES (20, 3, '删除', '3', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '删除操作');
-INSERT INTO `sys_dict_data` VALUES (21, 4, '授权', '4', 'sys_oper_type', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '授权操作');
-INSERT INTO `sys_dict_data` VALUES (22, 5, '导出', '5', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '导出操作');
-INSERT INTO `sys_dict_data` VALUES (23, 6, '导入', '6', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '导入操作');
-INSERT INTO `sys_dict_data` VALUES (24, 7, '强退', '7', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '强退操作');
-INSERT INTO `sys_dict_data` VALUES (25, 8, '生成代码', '8', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '生成操作');
-INSERT INTO `sys_dict_data` VALUES (26, 9, '清空数据', '9', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '清空操作');
-INSERT INTO `sys_dict_data` VALUES (27, 1, '成功', '0', 'sys_common_status', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
-INSERT INTO `sys_dict_data` VALUES (28, 2, '失败', '1', 'sys_common_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态');
-INSERT INTO `sys_dict_data` VALUES (100, 0, '启用', '1', 'table_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:31:34', 'admin', '2020-07-17 14:39:09', NULL);
-INSERT INTO `sys_dict_data` VALUES (101, 1, '禁用', '0', 'table_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:32:13', 'admin', '2020-07-17 14:40:14', NULL);
-INSERT INTO `sys_dict_data` VALUES (102, 0, '严格模式', '1', 'table_mode', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:33:50', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (103, 0, '非严格模式', '0', 'table_mode', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:34:01', 'admin', '2020-07-17 16:13:39', NULL);
-INSERT INTO `sys_dict_data` VALUES (104, 0, '否', '1', 'field_is_empty', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:34:18', 'admin', '2020-07-17 17:39:46', NULL);
-INSERT INTO `sys_dict_data` VALUES (105, 1, '是', '0', 'field_is_empty', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:34:25', 'admin', '2020-07-17 17:40:40', NULL);
-INSERT INTO `sys_dict_data` VALUES (106, 0, '启用', '1', 'field_is_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:38:02', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (107, 1, '禁用', '0', 'field_is_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:38:15', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (108, 1, '字符串', 'string', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:04', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (109, 2, '数字', 'number', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:20', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (110, 3, '日期', 'date', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:33', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (111, 1, 'doris', 'doris', 'db_type', NULL, NULL, 'N', '0', 'admin', '2020-07-20 11:00:44', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (112, 0, 'Mysql', 'mysql', 'db_type', NULL, NULL, 'N', '0', 'admin', '2020-07-20 11:00:55', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (113, 0, '启用', '1', 'company_status', NULL, NULL, 'N', '0', 'admin', '2020-07-20 14:22:32', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (114, 1, '禁用', '0', 'company_status', NULL, NULL, 'N', '0', 'admin', '2020-07-20 14:22:44', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (115, 0, 'BIGINT', 'BIGINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:07', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (116, 1, 'BOOLEAN', 'BOOLEAN', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:22', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (117, 3, 'CHAR', 'CHAR', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:36', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (118, 4, 'DATE', 'DATE', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:51', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (119, 5, 'DATETIME', 'DATETIME', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:02', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (120, 6, 'DECIMAL', 'DECIMAL', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:15', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (121, 7, 'DOUBLE', 'DOUBLE', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:28', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (122, 8, 'FLOAT', 'FLOAT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:39', 'admin', '2020-08-19 17:43:49', NULL);
-INSERT INTO `sys_dict_data` VALUES (123, 9, 'INT', 'INT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:59', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (124, 10, 'LARGEINT', 'LARGEINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:12', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (125, 11, 'SMALLINT', 'SMALLINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:26', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (126, 12, 'TINYINT', 'TINYINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:40', '', NULL, NULL);
-INSERT INTO `sys_dict_data` VALUES (127, 13, 'VARCHAR', 'VARCHAR', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:52', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (1, 1, '男', '0', 'sys_user_sex', '', '', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别男'),
+(2, 2, '女', '1', 'sys_user_sex', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别女'),
+(3, 3, '未知', '2', 'sys_user_sex', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '性别未知'),
+(4, 1, '显示', '0', 'sys_show_hide', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '显示菜单'),
+(5, 2, '隐藏', '1', 'sys_show_hide', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '隐藏菜单'),
+(6, 1, '正常', '0', 'sys_normal_disable', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态'),
+(7, 2, '停用', '1', 'sys_normal_disable', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态'),
+(8, 1, '正常', '0', 'sys_job_status', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态'),
+(9, 2, '暂停', '1', 'sys_job_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态'),
+(10, 1, '默认', 'DEFAULT', 'sys_job_group', '', '', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '默认分组'),
+(11, 2, '系统', 'SYSTEM', 'sys_job_group', '', '', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统分组'),
+(12, 1, '是', 'Y', 'sys_yes_no', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统默认是'),
+(13, 2, '否', 'N', 'sys_yes_no', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统默认否'),
+(14, 1, '通知', '1', 'sys_notice_type', '', 'warning', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '通知'),
+(15, 2, '公告', '2', 'sys_notice_type', '', 'success', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '公告'),
+(16, 1, '正常', '0', 'sys_notice_status', '', 'primary', 'Y', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态'),
+(17, 2, '关闭', '1', 'sys_notice_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '关闭状态'),
+(18, 1, '新增', '1', 'sys_oper_type', '', 'info', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '新增操作'),
+(19, 2, '修改', '2', 'sys_oper_type', '', 'info', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '修改操作'),
+(20, 3, '删除', '3', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '删除操作'),
+(21, 4, '授权', '4', 'sys_oper_type', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '授权操作'),
+(22, 5, '导出', '5', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '导出操作'),
+(23, 6, '导入', '6', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '导入操作'),
+(24, 7, '强退', '7', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '强退操作'),
+(25, 8, '生成代码', '8', 'sys_oper_type', '', 'warning', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '生成操作'),
+(26, 9, '清空数据', '9', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '清空操作'),
+(27, 1, '成功', '0', 'sys_common_status', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态'),
+(28, 2, '失败', '1', 'sys_common_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态'),
+(100, 0, '启用', '1', 'table_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:31:34', 'admin', '2020-07-17 14:39:09', NULL),
+(101, 1, '禁用', '0', 'table_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:32:13', 'admin', '2020-07-17 14:40:14', NULL),
+(102, 0, '严格模式', '1', 'table_mode', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:33:50', '', NULL, NULL),
+(103, 0, '非严格模式', '0', 'table_mode', NULL, NULL, 'N', '0', 'admin', '2020-07-17 14:34:01', 'admin', '2020-07-17 16:13:39', NULL),
+(104, 0, '否', '1', 'field_is_empty', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:34:18', 'admin', '2020-07-17 17:39:46', NULL),
+(105, 1, '是', '0', 'field_is_empty', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:34:25', 'admin', '2020-07-17 17:40:40', NULL),
+(106, 0, '启用', '1', 'field_is_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:38:02', '', NULL, NULL),
+(107, 1, '禁用', '0', 'field_is_enable', NULL, NULL, 'N', '0', 'admin', '2020-07-17 17:38:15', '', NULL, NULL),
+(108, 1, '字符串', 'string', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:04', '', NULL, NULL),
+(109, 2, '数字', 'number', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:20', '', NULL, NULL),
+(110, 3, '日期', 'date', 'rule_field_type', NULL, NULL, 'N', '0', 'admin', '2020-07-18 11:09:33', '', NULL, NULL),
+(111, 1, 'doris', 'doris', 'db_type', NULL, NULL, 'N', '0', 'admin', '2020-07-20 11:00:44', '', NULL, NULL),
+(112, 0, 'Mysql', 'mysql', 'db_type', NULL, NULL, 'N', '0', 'admin', '2020-07-20 11:00:55', '', NULL, NULL),
+(113, 0, '启用', '1', 'company_status', NULL, NULL, 'N', '0', 'admin', '2020-07-20 14:22:32', '', NULL, NULL),
+(114, 1, '禁用', '0', 'company_status', NULL, NULL, 'N', '0', 'admin', '2020-07-20 14:22:44', '', NULL, NULL),
+(115, 0, 'BIGINT', 'BIGINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:07', '', NULL, NULL),
+(116, 1, 'BOOLEAN', 'BOOLEAN', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:22', '', NULL, NULL),
+(117, 3, 'CHAR', 'CHAR', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:36', '', NULL, NULL),
+(118, 4, 'DATE', 'DATE', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:42:51', '', NULL, NULL),
+(119, 5, 'DATETIME', 'DATETIME', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:02', '', NULL, NULL),
+(120, 6, 'DECIMAL', 'DECIMAL', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:15', '', NULL, NULL),
+(121, 7, 'DOUBLE', 'DOUBLE', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:28', '', NULL, NULL),
+(122, 8, 'FLOAT', 'FLOAT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:39', 'admin', '2020-08-19 17:43:49', NULL),
+(123, 9, 'INT', 'INT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:43:59', '', NULL, NULL),
+(124, 10, 'LARGEINT', 'LARGEINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:12', '', NULL, NULL),
+(125, 11, 'SMALLINT', 'SMALLINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:26', '', NULL, NULL),
+(126, 12, 'TINYINT', 'TINYINT', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:40', '', NULL, NULL),
+(127, 13, 'VARCHAR', 'VARCHAR', 'data_type', NULL, NULL, 'N', '0', 'admin', '2020-08-19 17:44:52', '', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for sys_dict_type
@@ -960,367 +960,7 @@ INSERT INTO `sys_logininfor` VALUES (17, 'admin', '127.0.0.1', '内网IP', 'Chro
 INSERT INTO `sys_logininfor` VALUES (18, 'admin', '219.144.137.55', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-08-21 00:24:12');
 INSERT INTO `sys_logininfor` VALUES (19, 'admin', '23.105.220.60', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 09:24:13');
 INSERT INTO `sys_logininfor` VALUES (20, 'admin', '115.171.85.200', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 11:49:03');
-INSERT INTO `sys_logininfor` VALUES (21, 'admin', '23.105.220.60', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 12:00:59');
-INSERT INTO `sys_logininfor` VALUES (22, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 12:53:11');
-INSERT INTO `sys_logininfor` VALUES (23, 'admin', '23.105.220.60', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 13:21:21');
-INSERT INTO `sys_logininfor` VALUES (24, 'admin', '202.100.50.29', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 15:21:33');
-INSERT INTO `sys_logininfor` VALUES (25, 'admin', '202.100.50.29', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 16:41:50');
-INSERT INTO `sys_logininfor` VALUES (26, 'admin', '202.100.50.29', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-21 17:20:18');
-INSERT INTO `sys_logininfor` VALUES (27, 'admin', '117.36.117.89', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-23 09:01:04');
-INSERT INTO `sys_logininfor` VALUES (28, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-23 10:42:17');
-INSERT INTO `sys_logininfor` VALUES (29, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-23 11:25:02');
-INSERT INTO `sys_logininfor` VALUES (30, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-23 11:43:58');
-INSERT INTO `sys_logininfor` VALUES (31, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-23 12:35:31');
-INSERT INTO `sys_logininfor` VALUES (32, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 09:54:02');
-INSERT INTO `sys_logininfor` VALUES (33, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 10:37:58');
-INSERT INTO `sys_logininfor` VALUES (34, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 11:23:30');
-INSERT INTO `sys_logininfor` VALUES (35, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 13:16:40');
-INSERT INTO `sys_logininfor` VALUES (36, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 14:16:22');
-INSERT INTO `sys_logininfor` VALUES (37, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 14:26:40');
-INSERT INTO `sys_logininfor` VALUES (38, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 14:53:27');
-INSERT INTO `sys_logininfor` VALUES (39, 'admin', '113.132.8.90', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-24 15:44:29');
-INSERT INTO `sys_logininfor` VALUES (40, 'admin', '125.76.213.58', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-25 17:08:56');
-INSERT INTO `sys_logininfor` VALUES (41, 'admin', '219.144.136.79', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 09:40:24');
-INSERT INTO `sys_logininfor` VALUES (42, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 12:59:46');
-INSERT INTO `sys_logininfor` VALUES (43, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:00:38');
-INSERT INTO `sys_logininfor` VALUES (44, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:01:47');
-INSERT INTO `sys_logininfor` VALUES (45, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:02:42');
-INSERT INTO `sys_logininfor` VALUES (46, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:02:49');
-INSERT INTO `sys_logininfor` VALUES (47, 'admin', '219.144.136.79', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:05:08');
-INSERT INTO `sys_logininfor` VALUES (48, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:06:14');
-INSERT INTO `sys_logininfor` VALUES (49, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:06:58');
-INSERT INTO `sys_logininfor` VALUES (50, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:07:01');
-INSERT INTO `sys_logininfor` VALUES (51, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:07:03');
-INSERT INTO `sys_logininfor` VALUES (52, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:07:51');
-INSERT INTO `sys_logininfor` VALUES (53, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:13:18');
-INSERT INTO `sys_logininfor` VALUES (54, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:14:27');
-INSERT INTO `sys_logininfor` VALUES (55, NULL, '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '1', '用户不存在/密码错误', '2020-08-26 13:21:57');
-INSERT INTO `sys_logininfor` VALUES (56, NULL, '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '1', '用户不存在/密码错误', '2020-08-26 13:22:10');
-INSERT INTO `sys_logininfor` VALUES (57, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:22:55');
-INSERT INTO `sys_logininfor` VALUES (58, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:23:37');
-INSERT INTO `sys_logininfor` VALUES (59, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:24:32');
-INSERT INTO `sys_logininfor` VALUES (60, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:25:10');
-INSERT INTO `sys_logininfor` VALUES (61, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:25:13');
-INSERT INTO `sys_logininfor` VALUES (62, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:25:51');
-INSERT INTO `sys_logininfor` VALUES (63, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:26:11');
-INSERT INTO `sys_logininfor` VALUES (64, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:26:59');
-INSERT INTO `sys_logininfor` VALUES (65, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:29:27');
-INSERT INTO `sys_logininfor` VALUES (66, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 13:30:12');
-INSERT INTO `sys_logininfor` VALUES (67, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:12:49');
-INSERT INTO `sys_logininfor` VALUES (68, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:12:56');
-INSERT INTO `sys_logininfor` VALUES (69, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:14:52');
-INSERT INTO `sys_logininfor` VALUES (70, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:17:21');
-INSERT INTO `sys_logininfor` VALUES (71, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:42:49');
-INSERT INTO `sys_logininfor` VALUES (72, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:48:14');
-INSERT INTO `sys_logininfor` VALUES (73, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:50:21');
-INSERT INTO `sys_logininfor` VALUES (74, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 14:54:00');
-INSERT INTO `sys_logininfor` VALUES (75, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 15:04:37');
-INSERT INTO `sys_logininfor` VALUES (76, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 15:05:26');
-INSERT INTO `sys_logininfor` VALUES (77, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 15:06:42');
-INSERT INTO `sys_logininfor` VALUES (78, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 15:08:23');
-INSERT INTO `sys_logininfor` VALUES (79, 'admin', '219.144.136.79', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 15:30:09');
-INSERT INTO `sys_logininfor` VALUES (80, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:15:32');
-INSERT INTO `sys_logininfor` VALUES (81, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-08-26 16:23:28');
-INSERT INTO `sys_logininfor` VALUES (82, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:31:09');
-INSERT INTO `sys_logininfor` VALUES (83, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:31:29');
-INSERT INTO `sys_logininfor` VALUES (84, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:32:07');
-INSERT INTO `sys_logininfor` VALUES (85, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:33:33');
-INSERT INTO `sys_logininfor` VALUES (86, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:35:24');
-INSERT INTO `sys_logininfor` VALUES (87, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:35:36');
-INSERT INTO `sys_logininfor` VALUES (88, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:39:29');
-INSERT INTO `sys_logininfor` VALUES (89, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-08-26 16:41:24');
-INSERT INTO `sys_logininfor` VALUES (90, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:53:17');
-INSERT INTO `sys_logininfor` VALUES (91, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:56:11');
-INSERT INTO `sys_logininfor` VALUES (92, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 16:58:09');
-INSERT INTO `sys_logininfor` VALUES (93, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:00:02');
-INSERT INTO `sys_logininfor` VALUES (94, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:02:36');
-INSERT INTO `sys_logininfor` VALUES (95, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:03:40');
-INSERT INTO `sys_logininfor` VALUES (96, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:09:03');
-INSERT INTO `sys_logininfor` VALUES (97, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:09:45');
-INSERT INTO `sys_logininfor` VALUES (98, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:11:26');
-INSERT INTO `sys_logininfor` VALUES (99, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:12:02');
-INSERT INTO `sys_logininfor` VALUES (100, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:13:09');
-INSERT INTO `sys_logininfor` VALUES (101, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:15:01');
-INSERT INTO `sys_logininfor` VALUES (102, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:21:59');
-INSERT INTO `sys_logininfor` VALUES (103, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 17:23:02');
-INSERT INTO `sys_logininfor` VALUES (104, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 18:22:11');
-INSERT INTO `sys_logininfor` VALUES (105, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 18:24:38');
-INSERT INTO `sys_logininfor` VALUES (106, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 18:26:42');
-INSERT INTO `sys_logininfor` VALUES (107, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-26 18:53:27');
-INSERT INTO `sys_logininfor` VALUES (108, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 12:24:54');
-INSERT INTO `sys_logininfor` VALUES (109, 'admin', '219.144.136.79', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 12:28:25');
-INSERT INTO `sys_logininfor` VALUES (110, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 14:43:12');
-INSERT INTO `sys_logininfor` VALUES (111, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 15:41:40');
-INSERT INTO `sys_logininfor` VALUES (112, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 16:34:09');
-INSERT INTO `sys_logininfor` VALUES (113, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 17:10:16');
-INSERT INTO `sys_logininfor` VALUES (114, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-27 19:01:45');
-INSERT INTO `sys_logininfor` VALUES (115, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 08:49:18');
-INSERT INTO `sys_logininfor` VALUES (116, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 09:30:26');
-INSERT INTO `sys_logininfor` VALUES (117, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 12:07:22');
-INSERT INTO `sys_logininfor` VALUES (118, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 14:23:29');
-INSERT INTO `sys_logininfor` VALUES (119, 'admin', '202.100.50.173', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 15:38:59');
-INSERT INTO `sys_logininfor` VALUES (120, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 16:03:49');
-INSERT INTO `sys_logininfor` VALUES (121, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-28 17:46:37');
-INSERT INTO `sys_logininfor` VALUES (122, 'admin', '125.76.213.40', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-08-28 21:39:50');
-INSERT INTO `sys_logininfor` VALUES (123, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 10:16:54');
-INSERT INTO `sys_logininfor` VALUES (124, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 10:19:09');
-INSERT INTO `sys_logininfor` VALUES (125, 'admin', '113.132.8.241', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 11:05:53');
-INSERT INTO `sys_logininfor` VALUES (126, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 12:09:28');
-INSERT INTO `sys_logininfor` VALUES (127, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 12:24:36');
-INSERT INTO `sys_logininfor` VALUES (128, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 12:43:55');
-INSERT INTO `sys_logininfor` VALUES (129, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 14:40:28');
-INSERT INTO `sys_logininfor` VALUES (130, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 16:33:52');
-INSERT INTO `sys_logininfor` VALUES (131, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-29 16:40:24');
-INSERT INTO `sys_logininfor` VALUES (132, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 08:52:15');
-INSERT INTO `sys_logininfor` VALUES (133, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 09:27:13');
-INSERT INTO `sys_logininfor` VALUES (134, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 10:20:53');
-INSERT INTO `sys_logininfor` VALUES (135, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 14:18:57');
-INSERT INTO `sys_logininfor` VALUES (136, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 15:16:56');
-INSERT INTO `sys_logininfor` VALUES (137, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 15:39:31');
-INSERT INTO `sys_logininfor` VALUES (138, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 16:10:58');
-INSERT INTO `sys_logininfor` VALUES (139, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 17:31:00');
-INSERT INTO `sys_logininfor` VALUES (140, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 17:47:18');
-INSERT INTO `sys_logininfor` VALUES (141, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-08-31 17:47:31');
-INSERT INTO `sys_logininfor` VALUES (142, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 17:48:00');
-INSERT INTO `sys_logininfor` VALUES (143, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 17:58:35');
-INSERT INTO `sys_logininfor` VALUES (144, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-08-31 17:58:44');
-INSERT INTO `sys_logininfor` VALUES (145, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-08-31 18:04:32');
-INSERT INTO `sys_logininfor` VALUES (146, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 08:30:38');
-INSERT INTO `sys_logininfor` VALUES (147, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:04:53');
-INSERT INTO `sys_logininfor` VALUES (148, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:13:35');
-INSERT INTO `sys_logininfor` VALUES (149, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:29:39');
-INSERT INTO `sys_logininfor` VALUES (150, 'admin', '36.110.172.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:38:03');
-INSERT INTO `sys_logininfor` VALUES (151, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:38:28');
-INSERT INTO `sys_logininfor` VALUES (152, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:39:40');
-INSERT INTO `sys_logininfor` VALUES (153, 'admin', '36.110.172.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:40:19');
-INSERT INTO `sys_logininfor` VALUES (154, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:40:52');
-INSERT INTO `sys_logininfor` VALUES (155, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:41:28');
-INSERT INTO `sys_logininfor` VALUES (156, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:43:07');
-INSERT INTO `sys_logininfor` VALUES (157, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:43:47');
-INSERT INTO `sys_logininfor` VALUES (158, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 09:45:19');
-INSERT INTO `sys_logininfor` VALUES (159, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:47:08');
-INSERT INTO `sys_logininfor` VALUES (160, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-01 09:47:52');
-INSERT INTO `sys_logininfor` VALUES (161, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 10:55:10');
-INSERT INTO `sys_logininfor` VALUES (162, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 11:11:04');
-INSERT INTO `sys_logininfor` VALUES (163, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 11:39:04');
-INSERT INTO `sys_logininfor` VALUES (164, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 11:57:19');
-INSERT INTO `sys_logininfor` VALUES (165, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 13:47:42');
-INSERT INTO `sys_logininfor` VALUES (166, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 13:57:26');
-INSERT INTO `sys_logininfor` VALUES (167, 'admin', '117.36.119.62', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-01 14:51:25');
-INSERT INTO `sys_logininfor` VALUES (168, 'admin', '125.76.212.47', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-09-01 19:24:31');
-INSERT INTO `sys_logininfor` VALUES (169, 'admin', '125.76.212.47', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-09-01 22:13:42');
-INSERT INTO `sys_logininfor` VALUES (170, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 08:11:55');
-INSERT INTO `sys_logininfor` VALUES (171, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 09:43:01');
-INSERT INTO `sys_logininfor` VALUES (172, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 09:58:01');
-INSERT INTO `sys_logininfor` VALUES (173, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 10:30:59');
-INSERT INTO `sys_logininfor` VALUES (174, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 10:31:27');
-INSERT INTO `sys_logininfor` VALUES (175, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 10:57:48');
-INSERT INTO `sys_logininfor` VALUES (176, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:00:20');
-INSERT INTO `sys_logininfor` VALUES (177, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:23:47');
-INSERT INTO `sys_logininfor` VALUES (178, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:34:42');
-INSERT INTO `sys_logininfor` VALUES (179, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:40:19');
-INSERT INTO `sys_logininfor` VALUES (180, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:44:15');
-INSERT INTO `sys_logininfor` VALUES (181, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:46:34');
-INSERT INTO `sys_logininfor` VALUES (182, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:50:04');
-INSERT INTO `sys_logininfor` VALUES (183, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:52:21');
-INSERT INTO `sys_logininfor` VALUES (184, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:55:12');
-INSERT INTO `sys_logininfor` VALUES (185, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 11:55:36');
-INSERT INTO `sys_logininfor` VALUES (186, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:05:11');
-INSERT INTO `sys_logininfor` VALUES (187, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:05:15');
-INSERT INTO `sys_logininfor` VALUES (188, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:06:59');
-INSERT INTO `sys_logininfor` VALUES (189, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:07:02');
-INSERT INTO `sys_logininfor` VALUES (190, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:08:20');
-INSERT INTO `sys_logininfor` VALUES (191, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:08:24');
-INSERT INTO `sys_logininfor` VALUES (192, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:08:54');
-INSERT INTO `sys_logininfor` VALUES (193, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:08:57');
-INSERT INTO `sys_logininfor` VALUES (194, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:10:36');
-INSERT INTO `sys_logininfor` VALUES (195, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:10:39');
-INSERT INTO `sys_logininfor` VALUES (196, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:11:01');
-INSERT INTO `sys_logininfor` VALUES (197, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:12:48');
-INSERT INTO `sys_logininfor` VALUES (198, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:14:13');
-INSERT INTO `sys_logininfor` VALUES (199, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:14:20');
-INSERT INTO `sys_logininfor` VALUES (200, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:14:28');
-INSERT INTO `sys_logininfor` VALUES (201, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:14:31');
-INSERT INTO `sys_logininfor` VALUES (202, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:14:38');
-INSERT INTO `sys_logininfor` VALUES (203, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:14:42');
-INSERT INTO `sys_logininfor` VALUES (204, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:14:44');
-INSERT INTO `sys_logininfor` VALUES (205, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:14:50');
-INSERT INTO `sys_logininfor` VALUES (206, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:14:55');
-INSERT INTO `sys_logininfor` VALUES (207, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:15:00');
-INSERT INTO `sys_logininfor` VALUES (208, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:15:12');
-INSERT INTO `sys_logininfor` VALUES (209, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:15:15');
-INSERT INTO `sys_logininfor` VALUES (210, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:16:36');
-INSERT INTO `sys_logininfor` VALUES (211, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:16:42');
-INSERT INTO `sys_logininfor` VALUES (212, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:16:49');
-INSERT INTO `sys_logininfor` VALUES (213, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:16:54');
-INSERT INTO `sys_logininfor` VALUES (214, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:16:57');
-INSERT INTO `sys_logininfor` VALUES (215, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:17:02');
-INSERT INTO `sys_logininfor` VALUES (216, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:17:04');
-INSERT INTO `sys_logininfor` VALUES (217, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:17:09');
-INSERT INTO `sys_logininfor` VALUES (218, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:17:11');
-INSERT INTO `sys_logininfor` VALUES (219, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:17:14');
-INSERT INTO `sys_logininfor` VALUES (220, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:17:16');
-INSERT INTO `sys_logininfor` VALUES (221, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 12:17:21');
-INSERT INTO `sys_logininfor` VALUES (222, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:17:23');
-INSERT INTO `sys_logininfor` VALUES (223, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 12:59:20');
-INSERT INTO `sys_logininfor` VALUES (224, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 13:35:28');
-INSERT INTO `sys_logininfor` VALUES (225, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-02 15:25:30');
-INSERT INTO `sys_logininfor` VALUES (226, 'admin', '119.248.10.146', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-02 15:26:07');
-INSERT INTO `sys_logininfor` VALUES (227, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 15:50:27');
-INSERT INTO `sys_logininfor` VALUES (228, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 15:57:56');
-INSERT INTO `sys_logininfor` VALUES (229, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 16:55:38');
-INSERT INTO `sys_logininfor` VALUES (230, 'admin', '119.248.10.146', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-02 16:58:23');
-INSERT INTO `sys_logininfor` VALUES (231, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-02 17:07:51');
-INSERT INTO `sys_logininfor` VALUES (232, 'admin', '117.36.117.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 17:08:07');
-INSERT INTO `sys_logininfor` VALUES (233, 'admin', '23.105.220.60', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-02 18:40:27');
-INSERT INTO `sys_logininfor` VALUES (234, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 08:34:35');
-INSERT INTO `sys_logininfor` VALUES (235, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 08:41:51');
-INSERT INTO `sys_logininfor` VALUES (236, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 09:14:25');
-INSERT INTO `sys_logininfor` VALUES (237, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 09:19:51');
-INSERT INTO `sys_logininfor` VALUES (238, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 09:57:51');
-INSERT INTO `sys_logininfor` VALUES (239, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 10:12:22');
-INSERT INTO `sys_logininfor` VALUES (240, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 12:47:34');
-INSERT INTO `sys_logininfor` VALUES (241, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 15:33:36');
-INSERT INTO `sys_logininfor` VALUES (242, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 16:18:41');
-INSERT INTO `sys_logininfor` VALUES (243, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 17:48:04');
-INSERT INTO `sys_logininfor` VALUES (244, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-03 18:24:27');
-INSERT INTO `sys_logininfor` VALUES (245, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 18:24:46');
-INSERT INTO `sys_logininfor` VALUES (246, 'zhangfeng', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 18:34:15');
-INSERT INTO `sys_logininfor` VALUES (247, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 18:37:45');
-INSERT INTO `sys_logininfor` VALUES (248, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-03 18:42:12');
-INSERT INTO `sys_logininfor` VALUES (249, 'zhangfeng', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 18:42:19');
-INSERT INTO `sys_logininfor` VALUES (250, 'zhangfeng', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-03 18:43:19');
-INSERT INTO `sys_logininfor` VALUES (251, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-03 18:43:29');
-INSERT INTO `sys_logininfor` VALUES (252, 'admin', '113.132.8.39', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-09-04 07:14:23');
-INSERT INTO `sys_logininfor` VALUES (253, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '1', '用户不存在/密码错误', '2020-09-04 08:06:12');
-INSERT INTO `sys_logininfor` VALUES (254, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 08:06:19');
-INSERT INTO `sys_logininfor` VALUES (255, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 08:21:29');
-INSERT INTO `sys_logininfor` VALUES (256, 'admin', '36.110.172.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 08:37:32');
-INSERT INTO `sys_logininfor` VALUES (257, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 08:37:54');
-INSERT INTO `sys_logininfor` VALUES (258, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 09:01:49');
-INSERT INTO `sys_logininfor` VALUES (259, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 09:19:21');
-INSERT INTO `sys_logininfor` VALUES (260, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 10:34:09');
-INSERT INTO `sys_logininfor` VALUES (261, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 10:42:32');
-INSERT INTO `sys_logininfor` VALUES (262, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 10:47:33');
-INSERT INTO `sys_logininfor` VALUES (263, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 10:47:42');
-INSERT INTO `sys_logininfor` VALUES (264, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 11:17:47');
-INSERT INTO `sys_logininfor` VALUES (265, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:17:56');
-INSERT INTO `sys_logininfor` VALUES (266, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 11:25:50');
-INSERT INTO `sys_logininfor` VALUES (267, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:25:59');
-INSERT INTO `sys_logininfor` VALUES (268, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 11:27:05');
-INSERT INTO `sys_logininfor` VALUES (269, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:27:13');
-INSERT INTO `sys_logininfor` VALUES (270, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:35:59');
-INSERT INTO `sys_logininfor` VALUES (271, 'admin', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 11:39:30');
-INSERT INTO `sys_logininfor` VALUES (272, 'test', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:39:37');
-INSERT INTO `sys_logininfor` VALUES (273, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 11:45:22');
-INSERT INTO `sys_logininfor` VALUES (274, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:45:30');
-INSERT INTO `sys_logininfor` VALUES (275, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 11:50:51');
-INSERT INTO `sys_logininfor` VALUES (276, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 12:11:37');
-INSERT INTO `sys_logininfor` VALUES (277, 'test', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 12:15:36');
-INSERT INTO `sys_logininfor` VALUES (278, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 12:15:49');
-INSERT INTO `sys_logininfor` VALUES (279, 'test', '113.132.11.251', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 12:27:35');
-INSERT INTO `sys_logininfor` VALUES (280, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 12:49:23');
-INSERT INTO `sys_logininfor` VALUES (281, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 13:30:09');
-INSERT INTO `sys_logininfor` VALUES (282, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:01:06');
-INSERT INTO `sys_logininfor` VALUES (283, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:01:13');
-INSERT INTO `sys_logininfor` VALUES (284, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:01:50');
-INSERT INTO `sys_logininfor` VALUES (285, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:01:56');
-INSERT INTO `sys_logininfor` VALUES (286, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:03:04');
-INSERT INTO `sys_logininfor` VALUES (287, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:03:11');
-INSERT INTO `sys_logininfor` VALUES (288, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:04:05');
-INSERT INTO `sys_logininfor` VALUES (289, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:04:11');
-INSERT INTO `sys_logininfor` VALUES (290, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:05:13');
-INSERT INTO `sys_logininfor` VALUES (291, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:08:00');
-INSERT INTO `sys_logininfor` VALUES (292, 'test', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:08:08');
-INSERT INTO `sys_logininfor` VALUES (293, 'test', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 14:14:59');
-INSERT INTO `sys_logininfor` VALUES (294, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:15:06');
-INSERT INTO `sys_logininfor` VALUES (295, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 14:58:32');
-INSERT INTO `sys_logininfor` VALUES (296, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 15:16:44');
-INSERT INTO `sys_logininfor` VALUES (297, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 15:17:01');
-INSERT INTO `sys_logininfor` VALUES (298, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 15:33:18');
-INSERT INTO `sys_logininfor` VALUES (299, 'admin', '36.110.172.3', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 15:58:14');
-INSERT INTO `sys_logininfor` VALUES (300, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 17:22:00');
-INSERT INTO `sys_logininfor` VALUES (301, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 17:37:34');
-INSERT INTO `sys_logininfor` VALUES (302, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 17:54:20');
-INSERT INTO `sys_logininfor` VALUES (303, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 17:55:16');
-INSERT INTO `sys_logininfor` VALUES (304, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 18:54:01');
-INSERT INTO `sys_logininfor` VALUES (305, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 18:54:07');
-INSERT INTO `sys_logininfor` VALUES (306, 'zhangfeng', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-04 18:58:32');
-INSERT INTO `sys_logininfor` VALUES (307, 'admin', '125.76.212.94', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-04 18:58:42');
-INSERT INTO `sys_logininfor` VALUES (308, 'admin', '183.197.42.88', 'XX XX', 'Chrome 8', 'Mac OS X', '0', '登录成功', '2020-09-05 09:17:17');
-INSERT INTO `sys_logininfor` VALUES (309, 'admin', '185.152.67.14', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 09:20:55');
-INSERT INTO `sys_logininfor` VALUES (310, 'admin', '202.100.51.171', 'XX XX', 'Firefox 8', 'Windows 10', '0', '登录成功', '2020-09-05 09:23:25');
-INSERT INTO `sys_logininfor` VALUES (311, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 10:02:37');
-INSERT INTO `sys_logininfor` VALUES (312, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 10:39:08');
-INSERT INTO `sys_logininfor` VALUES (313, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:28:35');
-INSERT INTO `sys_logininfor` VALUES (314, 'zhengfeng', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '1', '用户不存在/密码错误', '2020-09-05 11:28:44');
-INSERT INTO `sys_logininfor` VALUES (315, 'zhangfeng', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:28:56');
-INSERT INTO `sys_logininfor` VALUES (316, 'zhangfeng', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:29:14');
-INSERT INTO `sys_logininfor` VALUES (317, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:29:20');
-INSERT INTO `sys_logininfor` VALUES (318, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:29:42');
-INSERT INTO `sys_logininfor` VALUES (319, 'zhangfeng', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:29:48');
-INSERT INTO `sys_logininfor` VALUES (320, 'zhangfeng', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:31:37');
-INSERT INTO `sys_logininfor` VALUES (321, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:31:46');
-INSERT INTO `sys_logininfor` VALUES (322, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:40:04');
-INSERT INTO `sys_logininfor` VALUES (323, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:45:10');
-INSERT INTO `sys_logininfor` VALUES (324, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 11:45:18');
-INSERT INTO `sys_logininfor` VALUES (325, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-05 11:46:25');
-INSERT INTO `sys_logininfor` VALUES (326, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 12:38:10');
-INSERT INTO `sys_logininfor` VALUES (327, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 13:18:00');
-INSERT INTO `sys_logininfor` VALUES (328, 'admin', '202.100.51.171', 'XX XX', 'Firefox 8', 'Windows 10', '0', '登录成功', '2020-09-05 14:07:00');
-INSERT INTO `sys_logininfor` VALUES (329, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 14:19:27');
-INSERT INTO `sys_logininfor` VALUES (330, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 14:45:01');
-INSERT INTO `sys_logininfor` VALUES (331, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 15:30:50');
-INSERT INTO `sys_logininfor` VALUES (332, 'admin', '202.100.51.171', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-05 16:10:51');
-INSERT INTO `sys_logininfor` VALUES (333, 'admin', '36.46.3.252', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-09-06 17:11:15');
-INSERT INTO `sys_logininfor` VALUES (334, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 09:12:43');
-INSERT INTO `sys_logininfor` VALUES (335, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 09:45:26');
-INSERT INTO `sys_logininfor` VALUES (336, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 12:13:27');
-INSERT INTO `sys_logininfor` VALUES (337, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 13:48:26');
-INSERT INTO `sys_logininfor` VALUES (338, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 14:04:44');
-INSERT INTO `sys_logininfor` VALUES (339, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 14:06:50');
-INSERT INTO `sys_logininfor` VALUES (340, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 14:57:54');
-INSERT INTO `sys_logininfor` VALUES (341, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:23:46');
-INSERT INTO `sys_logininfor` VALUES (342, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:31:04');
-INSERT INTO `sys_logininfor` VALUES (343, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-07 16:31:55');
-INSERT INTO `sys_logininfor` VALUES (344, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:32:03');
-INSERT INTO `sys_logininfor` VALUES (345, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:40:40');
-INSERT INTO `sys_logininfor` VALUES (346, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-07 16:42:07');
-INSERT INTO `sys_logininfor` VALUES (347, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:42:15');
-INSERT INTO `sys_logininfor` VALUES (348, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-07 16:56:04');
-INSERT INTO `sys_logininfor` VALUES (349, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 16:56:10');
-INSERT INTO `sys_logininfor` VALUES (350, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-07 17:00:28');
-INSERT INTO `sys_logininfor` VALUES (351, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 17:00:34');
-INSERT INTO `sys_logininfor` VALUES (352, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 17:36:13');
-INSERT INTO `sys_logininfor` VALUES (353, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 17:37:22');
-INSERT INTO `sys_logininfor` VALUES (354, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-07 17:44:44');
-INSERT INTO `sys_logininfor` VALUES (355, 'zhangfeng', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 17:44:50');
-INSERT INTO `sys_logininfor` VALUES (356, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 18:13:50');
-INSERT INTO `sys_logininfor` VALUES (357, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 18:25:33');
-INSERT INTO `sys_logininfor` VALUES (358, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 18:33:16');
-INSERT INTO `sys_logininfor` VALUES (359, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 18:39:26');
-INSERT INTO `sys_logininfor` VALUES (360, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-07 19:07:34');
-INSERT INTO `sys_logininfor` VALUES (361, 'admin', '202.100.34.154', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '登录成功', '2020-09-07 20:30:22');
-INSERT INTO `sys_logininfor` VALUES (362, 'admin', '202.100.34.154', 'XX XX', 'Chrome Mobile', 'Mac OS X (iPhone)', '0', '退出成功', '2020-09-07 20:31:17');
-INSERT INTO `sys_logininfor` VALUES (363, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 08:12:11');
-INSERT INTO `sys_logininfor` VALUES (364, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 08:27:38');
-INSERT INTO `sys_logininfor` VALUES (365, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '退出成功', '2020-09-08 08:27:46');
-INSERT INTO `sys_logininfor` VALUES (366, 'zhangfeng', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 08:27:54');
-INSERT INTO `sys_logininfor` VALUES (367, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 09:04:02');
-INSERT INTO `sys_logininfor` VALUES (368, 'admin', '113.200.69.150', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 10:04:01');
-INSERT INTO `sys_logininfor` VALUES (369, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 11:24:56');
-INSERT INTO `sys_logininfor` VALUES (370, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 11:37:36');
-INSERT INTO `sys_logininfor` VALUES (371, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 11:56:31');
-INSERT INTO `sys_logininfor` VALUES (372, 'admin', '117.36.116.82', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 12:00:19');
-INSERT INTO `sys_logininfor` VALUES (373, 'admin', '113.200.69.150', 'XX XX', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 12:38:48');
-INSERT INTO `sys_logininfor` VALUES (374, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 13:12:29');
-INSERT INTO `sys_logininfor` VALUES (375, 'admin', '127.0.0.1', '内网IP', 'Chrome 8', 'Windows 10', '0', '登录成功', '2020-09-08 13:16:33');
-INSERT INTO `sys_logininfor` VALUES (376, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '登录成功', '2021-04-23 10:46:11');
-INSERT INTO `sys_logininfor` VALUES (377, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '登录成功', '2021-04-23 17:47:41');
-INSERT INTO `sys_logininfor` VALUES (378, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '登录成功', '2021-05-13 17:12:25');
-INSERT INTO `sys_logininfor` VALUES (379, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '登录成功', '2021-05-24 13:08:13');
-INSERT INTO `sys_logininfor` VALUES (380, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '退出成功', '2021-05-24 13:08:41');
-INSERT INTO `sys_logininfor` VALUES (381, 'admin', '127.0.0.1', '内网IP', 'Chrome 9', 'Windows 10', '0', '登录成功', '2021-05-24 13:08:49');
+
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -1357,127 +997,6 @@ INSERT INTO `sys_menu` VALUES (100, '用户管理', 1, 1, 'user', 'system/user/i
 INSERT INTO `sys_menu` VALUES (101, '角色管理', 1, 2, 'role', 'system/role/index', 1, 'C', '0', '0', 'system:role:list', 'peoples', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '角色管理菜单');
 INSERT INTO `sys_menu` VALUES (102, '菜单管理', 1, 3, 'menu', 'system/menu/index', 1, 'C', '0', '0', 'system:menu:list', 'tree-table', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '菜单管理菜单');
 INSERT INTO `sys_menu` VALUES (103, '部门管理', 1, 4, 'dept', 'system/dept/index', 1, 'C', '0', '0', 'system:dept:list', 'tree', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '部门管理菜单');
-INSERT INTO `sys_menu` VALUES (104, '岗位管理', 1, 5, 'post', 'system/post/index', 1, 'C', '0', '0', 'system:post:list', 'post', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '岗位管理菜单');
-INSERT INTO `sys_menu` VALUES (105, '字典管理', 1, 6, 'dict', 'system/dict/index', 1, 'C', '0', '0', 'system:dict:list', 'dict', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '字典管理菜单');
-INSERT INTO `sys_menu` VALUES (106, '参数设置', 1, 7, 'config', 'system/config/index', 1, 'C', '0', '0', 'system:config:list', 'edit', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '参数设置菜单');
-INSERT INTO `sys_menu` VALUES (107, '通知公告', 1, 8, 'notice', 'system/notice/index', 1, 'C', '0', '0', 'system:notice:list', 'message', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '通知公告菜单');
-INSERT INTO `sys_menu` VALUES (108, '日志管理', 1, 9, 'log', 'system/log/index', 1, 'M', '0', '0', '', 'log', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '日志管理菜单');
-INSERT INTO `sys_menu` VALUES (109, '在线用户', 2, 1, 'online', 'monitor/online/index', 1, 'C', '0', '0', 'monitor:online:list', 'online', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '在线用户菜单');
-INSERT INTO `sys_menu` VALUES (110, '定时任务', 2, 2, 'job', 'monitor/job/index', 1, 'C', '0', '0', 'monitor:job:list', 'job', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '定时任务菜单');
-INSERT INTO `sys_menu` VALUES (111, '数据库监控', 2, 3, 'druid', 'monitor/druid/index', 1, 'C', '0', '0', 'monitor:druid:list', 'druid', 'admin', '2018-03-16 11:33:00', 'admin', '2020-07-20 12:48:00', '数据监控菜单');
-INSERT INTO `sys_menu` VALUES (112, '服务监控', 2, 4, 'server', 'monitor/server/index', 1, 'C', '0', '0', 'monitor:server:list', 'server', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '服务监控菜单');
-INSERT INTO `sys_menu` VALUES (113, '表单构建', 3, 1, 'build', 'tool/build/index', 1, 'C', '0', '0', 'tool:build:list', 'build', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '表单构建菜单');
-INSERT INTO `sys_menu` VALUES (114, '代码生成', 3, 2, 'gen', 'tool/gen/index', 1, 'C', '0', '0', 'tool:gen:list', 'code', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '代码生成菜单');
-INSERT INTO `sys_menu` VALUES (115, '系统接口', 3, 3, 'swagger', 'tool/swagger/index', 1, 'C', '0', '0', 'tool:swagger:list', 'swagger', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '系统接口菜单');
-INSERT INTO `sys_menu` VALUES (500, '操作日志', 108, 1, 'operlog', 'monitor/operlog/index', 1, 'C', '0', '0', 'monitor:operlog:list', 'form', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '操作日志菜单');
-INSERT INTO `sys_menu` VALUES (501, '登录日志', 108, 2, 'logininfor', 'monitor/logininfor/index', 1, 'C', '0', '0', 'monitor:logininfor:list', 'logininfor', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '登录日志菜单');
-INSERT INTO `sys_menu` VALUES (1001, '用户查询', 100, 1, '', '', 1, 'F', '0', '0', 'system:user:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1002, '用户新增', 100, 2, '', '', 1, 'F', '0', '0', 'system:user:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1003, '用户修改', 100, 3, '', '', 1, 'F', '0', '0', 'system:user:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1004, '用户删除', 100, 4, '', '', 1, 'F', '0', '0', 'system:user:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1005, '用户导出', 100, 5, '', '', 1, 'F', '0', '0', 'system:user:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1006, '用户导入', 100, 6, '', '', 1, 'F', '0', '0', 'system:user:import', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1007, '重置密码', 100, 7, '', '', 1, 'F', '0', '0', 'system:user:resetPwd', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1008, '角色查询', 101, 1, '', '', 1, 'F', '0', '0', 'system:role:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1009, '角色新增', 101, 2, '', '', 1, 'F', '0', '0', 'system:role:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1010, '角色修改', 101, 3, '', '', 1, 'F', '0', '0', 'system:role:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1011, '角色删除', 101, 4, '', '', 1, 'F', '0', '0', 'system:role:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1012, '角色导出', 101, 5, '', '', 1, 'F', '0', '0', 'system:role:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1013, '菜单查询', 102, 1, '', '', 1, 'F', '0', '0', 'system:menu:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1014, '菜单新增', 102, 2, '', '', 1, 'F', '0', '0', 'system:menu:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1015, '菜单修改', 102, 3, '', '', 1, 'F', '0', '0', 'system:menu:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1016, '菜单删除', 102, 4, '', '', 1, 'F', '0', '0', 'system:menu:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1017, '部门查询', 103, 1, '', '', 1, 'F', '0', '0', 'system:dept:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1018, '部门新增', 103, 2, '', '', 1, 'F', '0', '0', 'system:dept:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1019, '部门修改', 103, 3, '', '', 1, 'F', '0', '0', 'system:dept:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1020, '部门删除', 103, 4, '', '', 1, 'F', '0', '0', 'system:dept:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1021, '岗位查询', 104, 1, '', '', 1, 'F', '0', '0', 'system:post:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1022, '岗位新增', 104, 2, '', '', 1, 'F', '0', '0', 'system:post:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1023, '岗位修改', 104, 3, '', '', 1, 'F', '0', '0', 'system:post:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1024, '岗位删除', 104, 4, '', '', 1, 'F', '0', '0', 'system:post:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1025, '岗位导出', 104, 5, '', '', 1, 'F', '0', '0', 'system:post:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1026, '字典查询', 105, 1, '#', '', 1, 'F', '0', '0', 'system:dict:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1027, '字典新增', 105, 2, '#', '', 1, 'F', '0', '0', 'system:dict:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1028, '字典修改', 105, 3, '#', '', 1, 'F', '0', '0', 'system:dict:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1029, '字典删除', 105, 4, '#', '', 1, 'F', '0', '0', 'system:dict:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1030, '字典导出', 105, 5, '#', '', 1, 'F', '0', '0', 'system:dict:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1031, '参数查询', 106, 1, '#', '', 1, 'F', '0', '0', 'system:config:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1032, '参数新增', 106, 2, '#', '', 1, 'F', '0', '0', 'system:config:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1033, '参数修改', 106, 3, '#', '', 1, 'F', '0', '0', 'system:config:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1034, '参数删除', 106, 4, '#', '', 1, 'F', '0', '0', 'system:config:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1035, '参数导出', 106, 5, '#', '', 1, 'F', '0', '0', 'system:config:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1036, '公告查询', 107, 1, '#', '', 1, 'F', '0', '0', 'system:notice:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1037, '公告新增', 107, 2, '#', '', 1, 'F', '0', '0', 'system:notice:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1038, '公告修改', 107, 3, '#', '', 1, 'F', '0', '0', 'system:notice:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1039, '公告删除', 107, 4, '#', '', 1, 'F', '0', '0', 'system:notice:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1040, '操作查询', 500, 1, '#', '', 1, 'F', '0', '0', 'monitor:operlog:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1041, '操作删除', 500, 2, '#', '', 1, 'F', '0', '0', 'monitor:operlog:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1042, '日志导出', 500, 4, '#', '', 1, 'F', '0', '0', 'monitor:operlog:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1043, '登录查询', 501, 1, '#', '', 1, 'F', '0', '0', 'monitor:logininfor:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1044, '登录删除', 501, 2, '#', '', 1, 'F', '0', '0', 'monitor:logininfor:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1045, '日志导出', 501, 3, '#', '', 1, 'F', '0', '0', 'monitor:logininfor:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1046, '在线查询', 109, 1, '#', '', 1, 'F', '0', '0', 'monitor:online:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1047, '批量强退', 109, 2, '#', '', 1, 'F', '0', '0', 'monitor:online:batchLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1048, '单条强退', 109, 3, '#', '', 1, 'F', '0', '0', 'monitor:online:forceLogout', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1049, '任务查询', 110, 1, '#', '', 1, 'F', '0', '0', 'monitor:job:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1050, '任务新增', 110, 2, '#', '', 1, 'F', '0', '0', 'monitor:job:add', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1051, '任务修改', 110, 3, '#', '', 1, 'F', '0', '0', 'monitor:job:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1052, '任务删除', 110, 4, '#', '', 1, 'F', '0', '0', 'monitor:job:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1053, '状态修改', 110, 5, '#', '', 1, 'F', '0', '0', 'monitor:job:changeStatus', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1054, '任务导出', 110, 7, '#', '', 1, 'F', '0', '0', 'monitor:job:export', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1055, '生成查询', 114, 1, '#', '', 1, 'F', '0', '0', 'tool:gen:query', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1056, '生成修改', 114, 2, '#', '', 1, 'F', '0', '0', 'tool:gen:edit', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1057, '生成删除', 114, 3, '#', '', 1, 'F', '0', '0', 'tool:gen:remove', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1058, '导入代码', 114, 2, '#', '', 1, 'F', '0', '0', 'tool:gen:import', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1059, '预览代码', 114, 4, '#', '', 1, 'F', '0', '0', 'tool:gen:preview', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (1060, '生成代码', 114, 5, '#', '', 1, 'F', '0', '0', 'tool:gen:code', '#', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_menu` VALUES (2000, '数据接入', 0, 1, 'dataload', NULL, 1, 'M', '0', '0', '', 'import', 'admin', '2020-07-16 19:43:08', 'admin', '2020-07-20 19:45:37', '');
-INSERT INTO `sys_menu` VALUES (2001, '表规则管理', 2000, 5, 'table', 'dataload/table/index', 1, 'C', '0', '0', 'dataload:table:list', 'cascader', 'admin', '2020-07-16 19:44:17', 'admin', '2020-07-18 16:17:02', '');
-INSERT INTO `sys_menu` VALUES (2002, '属性规则管理', 2000, 6, 'rule', 'dataload/field/index', 1, 'C', '0', '0', 'dataload:rule:list', 'component', 'admin', '2020-07-16 19:45:14', 'admin', '2020-07-17 16:46:26', '');
-INSERT INTO `sys_menu` VALUES (2003, '数据源管理', 2000, 7, 'datasource', 'dataload/datasource/index', 1, 'C', '0', '0', 'dataload:datasource:list', 'database', 'admin', '2020-07-18 16:16:46', 'admin', '2020-07-18 16:30:52', '');
-INSERT INTO `sys_menu` VALUES (2004, '接入统计', 2000, 8, 'stat', 'dataload/stat/index', 1, 'C', '0', '0', 'dataload:stat:list', 'current_errors', 'admin', '2020-07-18 16:26:53', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2005, '接入日志', 2000, 9, 'log', 'dataload/log/index', 1, 'C', '0', '0', 'dataload:log:list', 'log', 'admin', '2020-07-18 16:32:03', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2006, '数据源查询', 2003, 1, '', NULL, 1, 'F', '0', '0', 'dataload:datasource:list', '#', 'admin', '2020-07-20 10:31:19', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2007, '数据新增', 2003, 2, '', NULL, 1, 'F', '0', '0', 'dataload:datasource:add', '#', 'admin', '2020-07-20 10:31:54', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2008, '数据源修改', 2003, 3, '', NULL, 1, 'F', '0', '0', 'dataload:datasource:update', '#', 'admin', '2020-07-20 10:32:20', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2009, '数据源删除', 2003, 4, '', NULL, 1, 'F', '0', '0', 'dataload:datasource:delete', '#', 'admin', '2020-07-20 10:32:40', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2010, '企业管理', 2000, 10, 'company', 'dataload/company/index', 1, 'C', '0', '0', 'dataload:company:list', 'company', 'admin', '2020-07-20 14:07:07', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2011, '错误日志', 2000, 11, 'errorlog', 'dataload/errorlog/index', 1, 'C', '0', '0', '', 'bug', 'admin', '2020-07-23 11:39:04', 'admin', '2020-07-23 11:39:16', '');
-INSERT INTO `sys_menu` VALUES (2012, '数据分析', 0, 0, 'analyze', NULL, 1, 'M', '1', '0', '', 'analyze', 'admin', '2020-07-28 11:52:09', 'admin', '2020-08-14 18:03:04', '');
-INSERT INTO `sys_menu` VALUES (2013, '事件分析', 2012, 0, 'event', 'analyze/event/index', 1, 'C', '0', '0', NULL, 'event', 'admin', '2020-07-28 11:56:41', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2014, '漏斗分析', 2012, 1, 'funnel', 'analyze/funnel/index', 1, 'C', '0', '0', '', 'funnel', 'admin', '2020-07-28 17:13:25', 'admin', '2020-07-28 17:13:50', '');
-INSERT INTO `sys_menu` VALUES (2015, '间隔分析', 2012, 2, 'interval', 'analyze/interval/index', 1, 'C', '0', '0', NULL, 'interval', 'admin', '2020-07-28 17:14:50', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2016, '用户行为分析', 2012, 3, 'user-analytics', 'analyze/user-analytics/index', 1, 'C', '0', '0', NULL, 'user-analytics', 'admin', '2020-07-28 17:15:46', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2017, '归因分析', 2012, 4, 'attribution', 'analyze/attribution/index', 1, 'C', '0', '0', NULL, 'attribution', 'admin', '2020-07-28 17:17:15', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2018, '分布分析', 2012, 5, 'addiction', 'analyze/addiction/index', 1, 'C', '0', '0', NULL, 'addiction', 'admin', '2020-07-28 17:18:23', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2019, '路径分析', 2012, 6, 'behavior-path', 'analyze/behavior-path/index', 1, 'C', '0', '0', NULL, 'behavior-path', 'admin', '2020-07-28 17:19:32', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2020, '留存分析', 2012, 7, 'retention', 'analyze/retention/index', 1, 'C', '0', '0', NULL, 'retention', 'admin', '2020-07-28 17:21:04', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2021, 'RoutineLoad监控', 2032, 11, 'doris', 'cluster/doris/index', 1, 'C', '0', '0', '', 'job', 'admin', '2020-08-07 16:08:05', 'admin', '2020-08-14 17:53:36', '');
-INSERT INTO `sys_menu` VALUES (2022, '数据管理', 0, 2, 'sql', NULL, 1, 'M', '0', '0', '', 'SQL', 'admin', '2020-08-10 09:51:02', 'admin', '2020-08-10 14:46:16', '');
-INSERT INTO `sys_menu` VALUES (2023, 'SQL控制台', 2022, 0, 'sql', 'sql/sqlEditor', 1, 'C', '0', '0', '', 'sql_console', 'admin', '2020-08-10 09:52:11', 'admin', '2020-08-17 11:07:41', '');
-INSERT INTO `sys_menu` VALUES (2024, '数据表管理', 2022, 3, 'tablemanager', 'data/table/index', 1, 'C', '0', '0', '', 'add_table', 'admin', '2020-08-10 15:09:08', 'admin', '2020-08-18 20:10:33', '');
-INSERT INTO `sys_menu` VALUES (2025, 'RollUP管理', 2022, 3, 'rollup', 'data/rollup/index', 1, 'C', '0', '0', NULL, 'rollup-dot-js', 'admin', '2020-08-10 15:10:02', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2026, '物化视图管理', 2022, 4, 'mvview', 'data/mvview/index', 1, 'C', '0', '0', '', 'view', 'admin', '2020-08-10 15:10:57', 'admin', '2020-08-24 10:38:39', '');
-INSERT INTO `sys_menu` VALUES (2027, '分区管理', 2022, 1, 'partition', 'data/partitions/index', 1, 'C', '0', '0', '', 'add_partition', 'admin', '2020-08-10 15:11:59', 'admin', '2020-08-19 19:22:49', '');
-INSERT INTO `sys_menu` VALUES (2028, '数据导入', 2022, 7, 'import', 'data/import/index', 1, 'C', '0', '0', NULL, 'data_import', 'admin', '2020-08-10 15:12:47', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2029, '数仓管理', 2022, 2, 'data-manager', 'data/capacity/index', 1, 'C', '0', '0', '', 'database', 'admin', '2020-08-10 15:14:18', 'admin', '2020-08-19 19:21:24', '');
-INSERT INTO `sys_menu` VALUES (2030, 'Backend监控', 2032, 2, 'backends', 'cluster/backends/index', 1, 'C', '0', '0', '', 'server', 'admin', '2020-08-10 17:47:06', 'admin', '2020-08-11 12:52:22', '');
-INSERT INTO `sys_menu` VALUES (2031, '导入监控', 2032, 3, 'jobs', 'cluster/jobs/index', 1, 'C', '0', '0', '', 'job', 'admin', '2020-08-11 09:33:01', 'admin', '2020-08-11 09:42:41', '');
-INSERT INTO `sys_menu` VALUES (2032, '集群监控', 0, 3, 'cluster', NULL, 1, 'M', '0', '0', '', 'cluster', 'admin', '2020-08-11 09:39:28', 'admin', '2020-08-11 09:39:43', '');
-INSERT INTO `sys_menu` VALUES (2033, '数据库监控', 2032, 4, 'dbs', 'cluster/dbs/index', 1, 'C', '0', '0', NULL, 'database', 'admin', '2020-08-11 11:04:03', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2034, 'Frontends', 2032, 2, 'frontends', 'cluster/frontends/index', 1, 'C', '0', '0', '', 'frontends', 'admin', '2020-08-11 12:52:12', 'admin', '2020-08-18 12:54:25', '');
-INSERT INTO `sys_menu` VALUES (2035, '事务监控', 2032, 7, 'transactions', 'cluster/transactions/index', 1, 'C', '0', '0', NULL, 'transactions', 'admin', '2020-08-11 12:53:18', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2036, '任务监控', 2032, 5, 'tasks', 'cluster/tasks/index', 1, 'C', '0', '0', '', 'tasks', 'admin', '2020-08-11 12:57:31', 'admin', '2020-08-11 12:58:03', '');
-INSERT INTO `sys_menu` VALUES (2037, '当前查询', 2032, 6, 'current_query', 'cluster/current_query/index', 1, 'C', '0', '0', '', 'query', 'admin', '2020-08-11 13:18:58', 'admin', '2020-08-11 13:29:53', '');
-INSERT INTO `sys_menu` VALUES (2038, '负载均衡', 2032, 8, 'balance', 'cluster/balance/index', 1, 'C', '0', '0', '', 'balance', 'admin', '2020-08-11 13:20:28', 'admin', '2020-08-14 17:53:26', '');
-INSERT INTO `sys_menu` VALUES (2039, 'Load错误监控', 2032, 9, 'load_error', 'cluster/load_error/index', 1, 'C', '0', '0', NULL, 'error', 'admin', '2020-08-11 13:35:05', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2040, 'SQL审计', 2032, 0, 'audit', 'cluster/audit/index', 1, 'C', '0', '0', '', 'audit', 'admin', '2020-08-13 10:22:01', 'admin', '2020-08-17 08:51:15', '');
-INSERT INTO `sys_menu` VALUES (2041, 'Brokers', 2032, 12, 'brokers', 'cluster/brokers/index', 1, 'C', '0', '0', '', 'brokers', 'admin', '2020-08-14 17:53:12', 'admin', '2020-08-14 17:53:43', '');
-INSERT INTO `sys_menu` VALUES (2042, '资源统计', 2032, 13, 'statistic', 'cluster/statistic/index', 1, 'C', '0', '0', NULL, 'statistic', 'admin', '2020-08-14 17:54:29', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2043, 'JVM监控', 2032, 14, 'jvm', 'cluster/jvm/index', 1, 'C', '0', '0', NULL, 'jvm', 'admin', '2020-08-14 17:55:05', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2044, '资源信息', 2032, 15, 'resources', 'cluster/resources/index', 1, 'C', '0', '0', NULL, 'resources', 'admin', '2020-08-14 17:55:52', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2045, 'Grafana监控', 2032, 1, 'http://103.235.229.142:8182/login', NULL, 0, 'C', '0', '0', '', 'grafana', 'admin', '2020-08-18 12:47:08', 'admin', '2020-08-18 12:55:08', '');
-INSERT INTO `sys_menu` VALUES (2046, '视图状态管理', 2022, 5, 'view_status', 'data/view_status/index', 1, 'C', '0', '0', NULL, 'pf_monitor', 'admin', '2020-08-23 11:10:25', '', NULL, '');
 
 -- ----------------------------
 -- Table structure for sys_notice
@@ -1663,72 +1182,6 @@ INSERT INTO `sys_role_menu` VALUES (2, 109);
 INSERT INTO `sys_role_menu` VALUES (2, 110);
 INSERT INTO `sys_role_menu` VALUES (2, 111);
 INSERT INTO `sys_role_menu` VALUES (2, 112);
-INSERT INTO `sys_role_menu` VALUES (2, 113);
-INSERT INTO `sys_role_menu` VALUES (2, 114);
-INSERT INTO `sys_role_menu` VALUES (2, 115);
-INSERT INTO `sys_role_menu` VALUES (2, 500);
-INSERT INTO `sys_role_menu` VALUES (2, 501);
-INSERT INTO `sys_role_menu` VALUES (2, 1000);
-INSERT INTO `sys_role_menu` VALUES (2, 1001);
-INSERT INTO `sys_role_menu` VALUES (2, 1002);
-INSERT INTO `sys_role_menu` VALUES (2, 1003);
-INSERT INTO `sys_role_menu` VALUES (2, 1004);
-INSERT INTO `sys_role_menu` VALUES (2, 1005);
-INSERT INTO `sys_role_menu` VALUES (2, 1006);
-INSERT INTO `sys_role_menu` VALUES (2, 1007);
-INSERT INTO `sys_role_menu` VALUES (2, 1008);
-INSERT INTO `sys_role_menu` VALUES (2, 1009);
-INSERT INTO `sys_role_menu` VALUES (2, 1010);
-INSERT INTO `sys_role_menu` VALUES (2, 1011);
-INSERT INTO `sys_role_menu` VALUES (2, 1012);
-INSERT INTO `sys_role_menu` VALUES (2, 1013);
-INSERT INTO `sys_role_menu` VALUES (2, 1014);
-INSERT INTO `sys_role_menu` VALUES (2, 1015);
-INSERT INTO `sys_role_menu` VALUES (2, 1016);
-INSERT INTO `sys_role_menu` VALUES (2, 1017);
-INSERT INTO `sys_role_menu` VALUES (2, 1018);
-INSERT INTO `sys_role_menu` VALUES (2, 1019);
-INSERT INTO `sys_role_menu` VALUES (2, 1020);
-INSERT INTO `sys_role_menu` VALUES (2, 1021);
-INSERT INTO `sys_role_menu` VALUES (2, 1022);
-INSERT INTO `sys_role_menu` VALUES (2, 1023);
-INSERT INTO `sys_role_menu` VALUES (2, 1024);
-INSERT INTO `sys_role_menu` VALUES (2, 1025);
-INSERT INTO `sys_role_menu` VALUES (2, 1026);
-INSERT INTO `sys_role_menu` VALUES (2, 1027);
-INSERT INTO `sys_role_menu` VALUES (2, 1028);
-INSERT INTO `sys_role_menu` VALUES (2, 1029);
-INSERT INTO `sys_role_menu` VALUES (2, 1030);
-INSERT INTO `sys_role_menu` VALUES (2, 1031);
-INSERT INTO `sys_role_menu` VALUES (2, 1032);
-INSERT INTO `sys_role_menu` VALUES (2, 1033);
-INSERT INTO `sys_role_menu` VALUES (2, 1034);
-INSERT INTO `sys_role_menu` VALUES (2, 1035);
-INSERT INTO `sys_role_menu` VALUES (2, 1036);
-INSERT INTO `sys_role_menu` VALUES (2, 1037);
-INSERT INTO `sys_role_menu` VALUES (2, 1038);
-INSERT INTO `sys_role_menu` VALUES (2, 1039);
-INSERT INTO `sys_role_menu` VALUES (2, 1040);
-INSERT INTO `sys_role_menu` VALUES (2, 1041);
-INSERT INTO `sys_role_menu` VALUES (2, 1042);
-INSERT INTO `sys_role_menu` VALUES (2, 1043);
-INSERT INTO `sys_role_menu` VALUES (2, 1044);
-INSERT INTO `sys_role_menu` VALUES (2, 1045);
-INSERT INTO `sys_role_menu` VALUES (2, 1046);
-INSERT INTO `sys_role_menu` VALUES (2, 1047);
-INSERT INTO `sys_role_menu` VALUES (2, 1048);
-INSERT INTO `sys_role_menu` VALUES (2, 1049);
-INSERT INTO `sys_role_menu` VALUES (2, 1050);
-INSERT INTO `sys_role_menu` VALUES (2, 1051);
-INSERT INTO `sys_role_menu` VALUES (2, 1052);
-INSERT INTO `sys_role_menu` VALUES (2, 1053);
-INSERT INTO `sys_role_menu` VALUES (2, 1054);
-INSERT INTO `sys_role_menu` VALUES (2, 1055);
-INSERT INTO `sys_role_menu` VALUES (2, 1056);
-INSERT INTO `sys_role_menu` VALUES (2, 1057);
-INSERT INTO `sys_role_menu` VALUES (2, 1058);
-INSERT INTO `sys_role_menu` VALUES (2, 1059);
-INSERT INTO `sys_role_menu` VALUES (2, 1060);
 
 -- ----------------------------
 -- Table structure for sys_user

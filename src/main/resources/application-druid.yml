@@ -9,9 +9,9 @@ spring:
 #                url: jdbc:mysql://192.168.9.32:3306/venus_bi?useSSL=false&serverTimezone=Asia/Shanghai
 #                username: root
 #                password: MyNewPass4!
-                url: jdbc:mysql://localhost:3306/venus_bi?useSSL=false&serverTimezone=Asia/Shanghai
+                url: jdbc:mysql://100.87.67.120:3306/bi?useSSL=false&serverTimezone=Asia/Shanghai
                 username: root
-                password: zhangfeng
+                password: 123456
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭

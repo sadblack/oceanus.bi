@@ -51,6 +51,7 @@ public class HikariPoolManager {
             username = properties.get("user_name").toString();
             password = properties.get("pass_word").toString();
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("读取数据库参数出现问题：" + e);
             throw e;
 
@@ -100,6 +101,7 @@ public class HikariPoolManager {
             logger.info("初始化Hikari连接池完成");
 
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("设置datasource各个属性值异常!" + e);
             throw e;
         }
@@ -126,6 +128,7 @@ public class HikariPoolManager {
             logger.info("获取数据库连接");
             connection = hikariDataSource.getConnection();
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("取得数据库连接时发生异常!" + e);
         }
         return connection;
@@ -165,6 +168,7 @@ public class HikariPoolManager {
             hikariDataSource.setMinimumIdle(1);
             connection = hikariDataSource.getConnection();
         } catch (Exception e) {
+            e.printStackTrace();
             logger.error("取得数据库连接时发生异常!" + e);
         }
         return connection;
@@ -182,6 +186,7 @@ public class HikariPoolManager {
                 connection.close();
                 logger.info("释放数据库连接");
             } catch (Exception e) {
+                e.printStackTrace();
                 logger.error("释放数据库连接时发生异常!" + e.getMessage());
             }
         }

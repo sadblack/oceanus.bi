@@ -114,7 +114,7 @@ export default {
     width: 250px;
     min-height: 100%;
     padding: 20px 10px;
-    /deep/ .el-card__header {
+    ::v-deep .el-card__header {
       div {
         display: flex;
         justify-content: space-between;

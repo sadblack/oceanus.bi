@@ -112,7 +112,7 @@
               </el-form-item>
               <el-form-item label="返回字段中文说明" prop="field_cnames">
                 <el-input v-model="form.field_cnames"  style="width:400px" placeholder="字段的顺序必须和SQL语句一致,使用英文逗号隔开"/>
-              </el-form-item>              
+              </el-form-item>
             </el-form>
           </el-col>
         </el-row>
@@ -133,7 +133,7 @@
                 </template>
               </el-table>
             </el-tab-pane>
-           
+
             <el-tab-pane :label="`错误信息`" name="errorInfo">
               <div class="error">
               <span>{{errorMsgInfo || '没有错误信息'}}</span>
@@ -930,7 +930,7 @@ export default {
 .vue-codemirror {
   height: 100%;
   overflow: hidden;
-  /deep/ .CodeMirror {
+  ::v-deep .CodeMirror {
     height: 100%;
     overflow: auto;
     .CodeMirror-lines {
@@ -953,10 +953,10 @@ export default {
 .analysis-form {
   width: 100%;
   padding-right: 20px;
-  /deep/ .el-form-item--mini.el-form-item {
+  ::v-deep .el-form-item--mini.el-form-item {
     margin-bottom: 10px;
   }
-  /deep/ .el-form-item--mini .el-form-item__label,
+  ::v-deep .el-form-item--mini .el-form-item__label,
   .limit-input {
     color: #909399;
     font-size: 14px;
@@ -967,7 +967,7 @@ export default {
 }
 .chart-form {
   width: 250px;
-  /deep/ .el-form-item--mini.el-form-item {
+  ::v-deep .el-form-item--mini.el-form-item {
     margin-bottom: 10px;
   }
 }
@@ -979,19 +979,19 @@ export default {
   .draggable-item {
     margin-right: 10px;
   }
-  /deep/ .el-select--mini {
+  ::v-deep .el-select--mini {
     margin: 0;
   }
 }
 .selected-field {
-  /deep/ .el-input__inner {
+  ::v-deep .el-input__inner {
     height: 20px;
     line-height: 20px;
     border: none;
     // background-color: rgba($color: #fff, $alpha: 0);
     padding: 0;
   }
-  /deep/ .el-input__suffix {
+  ::v-deep .el-input__suffix {
     right: 0px;
     .el-input__suffix-inner {
       display: inline-block;
@@ -1019,7 +1019,7 @@ export default {
     font-size: 20px;
     color: #205cd8;
     text-align: center;
-    /deep/ .el-dropdown {
+    ::v-deep .el-dropdown {
       font-size: 20px;
       color: #205cd8;
     }

@@ -549,10 +549,10 @@ export default {
 .analysis-form {
   width: 100%;
   padding-right: 20px;
-  /deep/ .el-form-item--mini.el-form-item {
+  ::v-deep .el-form-item--mini.el-form-item {
     margin-bottom: 10px;
   }
-  /deep/ .el-form-item--mini .el-form-item__label,
+  ::v-deep .el-form-item--mini .el-form-item__label,
   .limit-input {
     color: #909399;
     font-size: 14px;
@@ -563,7 +563,7 @@ export default {
 }
 .chart-form {
   width: 250px;
-  /deep/ .el-form-item--mini.el-form-item {
+  ::v-deep .el-form-item--mini.el-form-item {
     margin-bottom: 10px;
   }
 }
@@ -575,19 +575,19 @@ export default {
   .draggable-item {
     margin-right: 10px;
   }
-  /deep/ .el-select--mini {
+  ::v-deep .el-select--mini {
     margin: 0;
   }
 }
 .selected-field {
-  /deep/ .el-input__inner {
+  ::v-deep .el-input__inner {
     height: 20px;
     line-height: 20px;
     border: none;
     background-color: rgba($color: #fff, $alpha: 0);
     padding: 0;
   }
-  /deep/ .el-input__suffix {
+  ::v-deep .el-input__suffix {
     right: 0px;
     .el-input__suffix-inner {
       display: inline-block;
@@ -615,7 +615,7 @@ export default {
     font-size: 20px;
     color: #205cd8;
     text-align: center;
-    /deep/ .el-dropdown {
+    ::v-deep .el-dropdown {
       font-size: 20px;
       color: #205cd8;
     }
